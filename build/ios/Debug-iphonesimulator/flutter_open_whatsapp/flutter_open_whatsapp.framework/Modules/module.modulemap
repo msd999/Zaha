@@ -1,0 +1,11 @@
+framework module flutter_open_whatsapp {
+  umbrella header "flutter_open_whatsapp-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module flutter_open_whatsapp.Swift {
+    header "flutter_open_whatsapp-Swift.h"
+    requires objc
+}

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "551221674204",
+    "firebase_url": "https://zaha-a4b58.firebaseio.com",
+    "project_id": "zaha-a4b58",
+    "storage_bucket": "zaha-a4b58.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551221674204:android:5f7a492b0e6e9b9c0eb419",
+        "android_client_info": {
+          "package_name": "com.zahasri.zaha_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551221674204-rn35gf5ofulsulkffc51gei2l6p8ltsh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2G7YZtcNV5xnCOLhHu3HMxCKMUbiXU3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551221674204-rn35gf5ofulsulkffc51gei2l6p8ltsh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "551221674204-6tgr4cat2190o9qe8fvg6p5sq2mig7g8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.zahasri.zahaApplication"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

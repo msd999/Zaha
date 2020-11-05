@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "111375416204",
+    "firebase_url": "https://zaha-856d6.firebaseio.com",
+    "project_id": "zaha-856d6",
+    "storage_bucket": "zaha-856d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111375416204:android:107925869e7e25145534a9",
+        "android_client_info": {
+          "package_name": "com.zahasri.zaha_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111375416204-dub65okvlvmh5ef7ss39hkjov03j7ck2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zahasri.zaha_app",
+            "certificate_hash": "43915865f9c5b1faa60a3563c022efc427420a16"
+          }
+        },
+        {
+          "client_id": "111375416204-8n0dfalgi4clu3vf4o702kce59kcqilr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zahasri.zaha_app",
+            "certificate_hash": "96a81f319a18f9d3c7dbfaf84e47216bd27136d5"
+          }
+        },
+        {
+          "client_id": "111375416204-p5kvkn0mdgdpq41pq6mgsj6rjkg0sga2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zahasri.zaha_app",
+            "certificate_hash": "b7d5176c5a6399019e12adb3c6608256caca344a"
+          }
+        },
+        {
+          "client_id": "111375416204-jf4kuelfegim5uof43sqil3oih8jiecl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zahasri.zaha_app",
+            "certificate_hash": "4e300c2b36d2b1136620912e73eb68605babdc74"
+          }
+        },
+        {
+          "client_id": "111375416204-k0oq9agla73njic8n7pbos5ja8r5goet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDgL6IPg43nAap07T9872QS0P9_ZUOg6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111375416204-k0oq9agla73njic8n7pbos5ja8r5goet.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "111375416204-l1tp44qcbf1s64sh91r86qh0fdmrf1k5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.zahasri.zahaApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

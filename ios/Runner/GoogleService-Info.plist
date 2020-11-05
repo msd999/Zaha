@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>111375416204-l1tp44qcbf1s64sh91r86qh0fdmrf1k5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.111375416204-l1tp44qcbf1s64sh91r86qh0fdmrf1k5</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>111375416204-dub65okvlvmh5ef7ss39hkjov03j7ck2.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDEBas_I2QKm4wNl6HMAa9eR0YFVkVYodY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>111375416204</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.zahasri.zahaApp</string>
+	<key>PROJECT_ID</key>
+	<string>zaha-856d6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>zaha-856d6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:111375416204:ios:941b8b8d34badb535534a9</string>
+	<key>DATABASE_URL</key>
+	<string>https://zaha-856d6.firebaseio.com</string>
+</dict>
+</plist>

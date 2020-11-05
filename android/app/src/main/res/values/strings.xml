@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">zaha</string>
+
+    <string name="facebook_app_id">278585476696379</string>
+    <string name="fb_login_protocol_scheme">fb278585476696379</string>
+
+</resources>
+
