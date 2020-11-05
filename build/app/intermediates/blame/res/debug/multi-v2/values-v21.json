@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sh/Documents/zaha/zaha_ios/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/sh/Documents/work/zaha/App/Zaha/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/3b22a803f89dbf772a4f91b1e3281e77/appcompat-1.0.0/res/values-v21/values-v21.xml",

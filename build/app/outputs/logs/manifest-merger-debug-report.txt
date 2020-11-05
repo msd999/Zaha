@@ -1,24 +1,24 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:1:1-55:12
-INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:1:1-55:12
-INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:1:1-55:12
-INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:1:1-55:12
-MERGED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:1:1-55:12
-MERGED from [:google_sign_in] /Users/sh/Documents/zaha/zaha_ios/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:firebase_auth] /Users/sh/Documents/zaha/zaha_ios/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_auth_web] /Users/sh/Documents/zaha/zaha_ios/build/firebase_auth_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:firebase_core] /Users/sh/Documents/zaha/zaha_ios/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_core_web] /Users/sh/Documents/zaha/zaha_ios/build/firebase_core_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:sqflite] /Users/sh/Documents/zaha/zaha_ios/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:flutter_facebook_login] /Users/sh/Documents/zaha/zaha_ios/build/flutter_facebook_login/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:url_launcher] /Users/sh/Documents/zaha/zaha_ios/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
-MERGED from [:flutter_open_whatsapp] /Users/sh/Documents/zaha/zaha_ios/build/flutter_open_whatsapp/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
-MERGED from [:path_provider] /Users/sh/Documents/zaha/zaha_ios/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:connectivity] /Users/sh/Documents/zaha/zaha_ios/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-10:12
-MERGED from [:shared_preferences] /Users/sh/Documents/zaha/zaha_ios/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:apple_sign_in] /Users/sh/Documents/zaha/zaha_ios/build/apple_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:1:1-55:12
+INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:1:1-55:12
+INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:1:1-55:12
+INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:1:1-55:12
+MERGED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:1:1-55:12
+MERGED from [:google_sign_in] /Users/sh/Documents/work/zaha/App/Zaha/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:firebase_auth] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_auth_web] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_auth_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:firebase_core] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core_web] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_core_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite] /Users/sh/Documents/work/zaha/App/Zaha/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_facebook_login] /Users/sh/Documents/work/zaha/App/Zaha/build/flutter_facebook_login/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher] /Users/sh/Documents/work/zaha/App/Zaha/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:flutter_open_whatsapp] /Users/sh/Documents/work/zaha/App/Zaha/build/flutter_open_whatsapp/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
+MERGED from [:path_provider] /Users/sh/Documents/work/zaha/App/Zaha/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:connectivity] /Users/sh/Documents/work/zaha/App/Zaha/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-10:12
+MERGED from [:shared_preferences] /Users/sh/Documents/work/zaha/App/Zaha/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:apple_sign_in] /Users/sh/Documents/work/zaha/App/Zaha/build/apple_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.android:facebook-login:5.5.1] /Users/sh/.gradle/caches/transforms-2/files-2.1/5d269ec0d00306d3e7758b27ec0f1a80/jetified-facebook-login-5.5.1/AndroidManifest.xml:21:1-31:12
 MERGED from [com.google.firebase:firebase-analytics:17.2.2] /Users/sh/.gradle/caches/transforms-2/files-2.1/3869b47be141af223e7a4ec7aa5e1ec2/jetified-firebase-analytics-17.2.2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:19.2.0] /Users/sh/.gradle/caches/transforms-2/files-2.1/bfc02847cc6a597096f8f8acddc81951/jetified-firebase-auth-19.2.0/AndroidManifest.xml:17:1-42:12
@@ -76,29 +76,29 @@ MERGED from [androidx.print:print:1.0.0] /Users/sh/.gradle/caches/transforms-2/f
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/sh/.gradle/caches/transforms-2/files-2.1/c7b6252082af7c3db8c761dc5fc777cc/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/sh/.gradle/caches/transforms-2/files-2.1/23efeaea9ad0d45302c6f534d3b29411/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sh/.gradle/caches/transforms-2/files-2.1/eff3b887575ba11b32853a4f6c021ff5/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/debug/AndroidManifest.xml:1:1-55:12
-INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/debug/AndroidManifest.xml:1:1-55:12
-INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/debug/AndroidManifest.xml:1:1-55:12
+INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/debug/AndroidManifest.xml:1:1-55:12
+INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/debug/AndroidManifest.xml:1:1-55:12
+INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/debug/AndroidManifest.xml:1:1-55:12
 	package
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:2:5-43
-		INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/debug/AndroidManifest.xml
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:2:5-43
+		INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:1:1-55:12
-		INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:1:1-55:12
+		INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:1:1-55:12
-		INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:1:1-55:12
+		INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:9:5-66
-MERGED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:9:5-66
-MERGED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:9:5-66
-MERGED from [:google_sign_in] /Users/sh/Documents/zaha/zaha_ios/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
-MERGED from [:google_sign_in] /Users/sh/Documents/zaha/zaha_ios/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:9:5-66
+MERGED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:9:5-66
+MERGED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:9:5-66
+MERGED from [:google_sign_in] /Users/sh/Documents/work/zaha/App/Zaha/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
+MERGED from [:google_sign_in] /Users/sh/Documents/work/zaha/App/Zaha/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.gms:play-services-measurement:17.2.2] /Users/sh/.gradle/caches/transforms-2/files-2.1/6af98df3ae2e9eba5027061d10c6b472/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement:17.2.2] /Users/sh/.gradle/caches/transforms-2/files-2.1/6af98df3ae2e9eba5027061d10c6b472/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] /Users/sh/.gradle/caches/transforms-2/files-2.1/4cf11f806248f69485acbfe366b0122b/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:22:5-67
@@ -110,19 +110,19 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.2] /User
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.2] /Users/sh/.gradle/caches/transforms-2/files-2.1/2e10509c3458f89c5371eb4092336fa4/jetified-play-services-measurement-sdk-api-17.2.2/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.2] /Users/sh/.gradle/caches/transforms-2/files-2.1/2e10509c3458f89c5371eb4092336fa4/jetified-play-services-measurement-sdk-api-17.2.2/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:9:22-64
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:9:22-64
 application
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:11:5-54:19
-MERGED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:11:5-54:19
-MERGED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:11:5-54:19
-MERGED from [:firebase_auth] /Users/sh/Documents/zaha/zaha_ios/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_auth] /Users/sh/Documents/zaha/zaha_ios/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /Users/sh/Documents/zaha/zaha_ios/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /Users/sh/Documents/zaha/zaha_ios/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:url_launcher] /Users/sh/Documents/zaha/zaha_ios/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
-MERGED from [:url_launcher] /Users/sh/Documents/zaha/zaha_ios/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
-MERGED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
-MERGED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:11:5-54:19
+MERGED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:11:5-54:19
+MERGED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:11:5-54:19
+MERGED from [:firebase_auth] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:url_launcher] /Users/sh/Documents/work/zaha/App/Zaha/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] /Users/sh/Documents/work/zaha/App/Zaha/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+MERGED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
+MERGED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
 MERGED from [com.facebook.android:facebook-login:5.5.1] /Users/sh/.gradle/caches/transforms-2/files-2.1/5d269ec0d00306d3e7758b27ec0f1a80/jetified-facebook-login-5.5.1/AndroidManifest.xml:28:5-29:19
 MERGED from [com.facebook.android:facebook-login:5.5.1] /Users/sh/.gradle/caches/transforms-2/files-2.1/5d269ec0d00306d3e7758b27ec0f1a80/jetified-facebook-login-5.5.1/AndroidManifest.xml:28:5-29:19
 MERGED from [com.google.firebase:firebase-analytics:17.2.2] /Users/sh/.gradle/caches/transforms-2/files-2.1/3869b47be141af223e7a4ec7aa5e1ec2/jetified-firebase-analytics-17.2.2/AndroidManifest.xml:7:5-20
@@ -174,127 +174,127 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/sh/.
 	android:supportsRtl
 		ADDED from [com.facebook.android:facebook-login:5.5.1] /Users/sh/.gradle/caches/transforms-2/files-2.1/5d269ec0d00306d3e7758b27ec0f1a80/jetified-facebook-login-5.5.1/AndroidManifest.xml:28:18-44
 	android:label
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:13:9-29
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:13:9-29
 	android:icon
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:14:9-45
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:14:9-45
 	android:name
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:12:9-57
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:12:9-57
 activity#com.zahasri.zaha_application.MainActivity
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:15:9-33:20
-MERGED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:15:9-33:20
-MERGED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:15:9-33:20
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:15:9-33:20
+MERGED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:15:9-33:20
+MERGED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:15:9-33:20
 	android:launchMode
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:17:13-43
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:17:13-43
 	android:hardwareAccelerated
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:20:13-47
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:20:13-47
 	android:windowSoftInputMode
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:21:13-55
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:21:13-55
 	android:configChanges
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:19:13-163
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:19:13-163
 	android:theme
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:18:13-47
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:18:13-47
 	android:name
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:16:13-41
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:16:13-41
 meta-data#io.flutter.app.android.SplashScreenUntilFirstFrame
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:26:13-28:40
-MERGED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:26:13-28:40
-MERGED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:26:13-28:40
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:26:13-28:40
+MERGED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:26:13-28:40
+MERGED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:26:13-28:40
 	android:value
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:28:17-37
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:28:17-37
 	android:name
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:27:17-82
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:27:17-82
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:29:13-32:29
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:29:13-32:29
 action#android.intent.action.MAIN
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:30:17-68
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:30:17-68
 	android:name
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:30:25-66
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:31:17-76
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:31:17-76
 	android:name
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:31:27-74
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:31:27-74
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:36:9-37:54
-MERGED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:36:9-37:54
-MERGED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:36:9-37:54
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:36:9-37:54
+MERGED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:36:9-37:54
+MERGED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:36:9-37:54
 	android:value
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:37:13-52
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:37:13-52
 	android:name
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:36:20-65
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:36:20-65
 activity#com.facebook.FacebookActivity
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:39:9-42:48
-MERGED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:39:9-42:48
-MERGED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:39:9-42:48
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:39:9-42:48
+MERGED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:39:9-42:48
+MERGED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:39:9-42:48
 MERGED from [com.facebook.android:facebook-common:5.5.1] /Users/sh/.gradle/caches/transforms-2/files-2.1/95291edf3c355fefa99d1c4d02fdf606/jetified-facebook-common-5.5.1/AndroidManifest.xml:29:9-32:66
 MERGED from [com.facebook.android:facebook-common:5.5.1] /Users/sh/.gradle/caches/transforms-2/files-2.1/95291edf3c355fefa99d1c4d02fdf606/jetified-facebook-common-5.5.1/AndroidManifest.xml:29:9-32:66
 	android:label
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:42:13-45
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:42:13-45
 	android:configChanges
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:40:13-113
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:40:13-113
 	android:theme
 		ADDED from [com.facebook.android:facebook-common:5.5.1] /Users/sh/.gradle/caches/transforms-2/files-2.1/95291edf3c355fefa99d1c4d02fdf606/jetified-facebook-common-5.5.1/AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:39:19-63
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:39:19-63
 activity#com.facebook.CustomTabActivity
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:43:9-52:20
-MERGED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:43:9-52:20
-MERGED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:43:9-52:20
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:43:9-52:20
+MERGED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:43:9-52:20
+MERGED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:43:9-52:20
 MERGED from [com.facebook.android:facebook-common:5.5.1] /Users/sh/.gradle/caches/transforms-2/files-2.1/95291edf3c355fefa99d1c4d02fdf606/jetified-facebook-common-5.5.1/AndroidManifest.xml:34:9-67
 MERGED from [com.facebook.android:facebook-common:5.5.1] /Users/sh/.gradle/caches/transforms-2/files-2.1/95291edf3c355fefa99d1c4d02fdf606/jetified-facebook-common-5.5.1/AndroidManifest.xml:34:9-67
 	android:exported
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:45:13-36
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:45:13-36
 	android:name
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:44:13-58
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:44:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:46:13-51:29
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:46:13-51:29
 action#android.intent.action.VIEW
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:47:17-69
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:47:17-69
 	android:name
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:47:25-66
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:47:25-66
 category#android.intent.category.DEFAULT
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:48:17-76
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:48:17-76
 	android:name
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:48:27-73
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:48:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:49:17-78
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:49:17-78
 	android:name
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:49:27-75
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:49:27-75
 data
-ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:50:17-75
+ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:50:17-75
 	android:scheme
-		ADDED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml:50:23-72
+		ADDED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml:50:23-72
 uses-sdk
-INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml
-MERGED from [:google_sign_in] /Users/sh/Documents/zaha/zaha_ios/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:google_sign_in] /Users/sh/Documents/zaha/zaha_ios/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /Users/sh/Documents/zaha/zaha_ios/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /Users/sh/Documents/zaha/zaha_ios/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth_web] /Users/sh/Documents/zaha/zaha_ios/build/firebase_auth_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth_web] /Users/sh/Documents/zaha/zaha_ios/build/firebase_auth_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/sh/Documents/zaha/zaha_ios/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /Users/sh/Documents/zaha/zaha_ios/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core_web] /Users/sh/Documents/zaha/zaha_ios/build/firebase_core_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core_web] /Users/sh/Documents/zaha/zaha_ios/build/firebase_core_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] /Users/sh/Documents/zaha/zaha_ios/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] /Users/sh/Documents/zaha/zaha_ios/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_facebook_login] /Users/sh/Documents/zaha/zaha_ios/build/flutter_facebook_login/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_facebook_login] /Users/sh/Documents/zaha/zaha_ios/build/flutter_facebook_login/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher] /Users/sh/Documents/zaha/zaha_ios/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher] /Users/sh/Documents/zaha/zaha_ios/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_open_whatsapp] /Users/sh/Documents/zaha/zaha_ios/build/flutter_open_whatsapp/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:flutter_open_whatsapp] /Users/sh/Documents/zaha/zaha_ios/build/flutter_open_whatsapp/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] /Users/sh/Documents/zaha/zaha_ios/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] /Users/sh/Documents/zaha/zaha_ios/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:connectivity] /Users/sh/Documents/zaha/zaha_ios/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:connectivity] /Users/sh/Documents/zaha/zaha_ios/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences] /Users/sh/Documents/zaha/zaha_ios/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences] /Users/sh/Documents/zaha/zaha_ios/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:apple_sign_in] /Users/sh/Documents/zaha/zaha_ios/build/apple_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:apple_sign_in] /Users/sh/Documents/zaha/zaha_ios/build/apple_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml
+MERGED from [:google_sign_in] /Users/sh/Documents/work/zaha/App/Zaha/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:google_sign_in] /Users/sh/Documents/work/zaha/App/Zaha/build/google_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth_web] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_auth_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth_web] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_auth_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core_web] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_core_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core_web] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_core_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /Users/sh/Documents/work/zaha/App/Zaha/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /Users/sh/Documents/work/zaha/App/Zaha/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_facebook_login] /Users/sh/Documents/work/zaha/App/Zaha/build/flutter_facebook_login/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_facebook_login] /Users/sh/Documents/work/zaha/App/Zaha/build/flutter_facebook_login/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /Users/sh/Documents/work/zaha/App/Zaha/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /Users/sh/Documents/work/zaha/App/Zaha/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_open_whatsapp] /Users/sh/Documents/work/zaha/App/Zaha/build/flutter_open_whatsapp/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_open_whatsapp] /Users/sh/Documents/work/zaha/App/Zaha/build/flutter_open_whatsapp/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] /Users/sh/Documents/work/zaha/App/Zaha/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] /Users/sh/Documents/work/zaha/App/Zaha/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:connectivity] /Users/sh/Documents/work/zaha/App/Zaha/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:connectivity] /Users/sh/Documents/work/zaha/App/Zaha/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /Users/sh/Documents/work/zaha/App/Zaha/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /Users/sh/Documents/work/zaha/App/Zaha/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:apple_sign_in] /Users/sh/Documents/work/zaha/App/Zaha/build/apple_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:apple_sign_in] /Users/sh/Documents/work/zaha/App/Zaha/build/apple_sign_in/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.android:facebook-login:5.5.1] /Users/sh/.gradle/caches/transforms-2/files-2.1/5d269ec0d00306d3e7758b27ec0f1a80/jetified-facebook-login-5.5.1/AndroidManifest.xml:24:5-26:41
 MERGED from [com.facebook.android:facebook-login:5.5.1] /Users/sh/.gradle/caches/transforms-2/files-2.1/5d269ec0d00306d3e7758b27ec0f1a80/jetified-facebook-login-5.5.1/AndroidManifest.xml:24:5-26:41
 MERGED from [com.google.firebase:firebase-analytics:17.2.2] /Users/sh/.gradle/caches/transforms-2/files-2.1/3869b47be141af223e7a4ec7aa5e1ec2/jetified-firebase-analytics-17.2.2/AndroidManifest.xml:5:5-44
@@ -409,18 +409,18 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/sh/.gradle/cache
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/sh/.gradle/caches/transforms-2/files-2.1/23efeaea9ad0d45302c6f534d3b29411/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sh/.gradle/caches/transforms-2/files-2.1/eff3b887575ba11b32853a4f6c021ff5/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sh/.gradle/caches/transforms-2/files-2.1/eff3b887575ba11b32853a4f6c021ff5/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/sh/Documents/zaha/zaha_ios/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sh/Documents/work/zaha/App/Zaha/android/app/src/debug/AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_auth] /Users/sh/Documents/zaha/zaha_ios/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /Users/sh/Documents/zaha/zaha_ios/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /Users/sh/Documents/zaha/zaha_ios/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+ADDED from [:firebase_auth] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.firebase:firebase-auth:19.2.0] /Users/sh/.gradle/caches/transforms-2/files-2.1/bfc02847cc6a597096f8f8acddc81951/jetified-firebase-auth-19.2.0/AndroidManifest.xml:33:9-39:19
 MERGED from [com.google.firebase:firebase-auth:19.2.0] /Users/sh/.gradle/caches/transforms-2/files-2.1/bfc02847cc6a597096f8f8acddc81951/jetified-firebase-auth-19.2.0/AndroidManifest.xml:33:9-39:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] /Users/sh/.gradle/caches/transforms-2/files-2.1/4cf11f806248f69485acbfe366b0122b/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:27:9-33:19
@@ -436,53 +436,53 @@ MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/sh/.gradle/cache
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:19.3.0] /Users/sh/.gradle/caches/transforms-2/files-2.1/9f50104a3ed305ca2fc55bd80a29800d/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
 	android:name
-		ADDED from [:firebase_auth] /Users/sh/Documents/zaha/zaha_ios/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+		ADDED from [:firebase_auth] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_auth] /Users/sh/Documents/zaha/zaha_ios/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_auth] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_auth] /Users/sh/Documents/zaha/zaha_ios/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_auth] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_auth] /Users/sh/Documents/zaha/zaha_ios/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
+		ADDED from [:firebase_auth] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_core] /Users/sh/Documents/zaha/zaha_ios/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_core] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_core] /Users/sh/Documents/zaha/zaha_ios/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_core] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_core] /Users/sh/Documents/zaha/zaha_ios/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
+		ADDED from [:firebase_core] /Users/sh/Documents/work/zaha/App/Zaha/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
 activity#io.flutter.plugins.urllauncher.WebViewActivity
-ADDED from [:url_launcher] /Users/sh/Documents/zaha/zaha_ios/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+ADDED from [:url_launcher] /Users/sh/Documents/work/zaha/App/Zaha/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
 	android:exported
-		ADDED from [:url_launcher] /Users/sh/Documents/zaha/zaha_ios/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+		ADDED from [:url_launcher] /Users/sh/Documents/work/zaha/App/Zaha/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
 	android:theme
-		ADDED from [:url_launcher] /Users/sh/Documents/zaha/zaha_ios/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+		ADDED from [:url_launcher] /Users/sh/Documents/work/zaha/App/Zaha/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
 	android:name
-		ADDED from [:url_launcher] /Users/sh/Documents/zaha/zaha_ios/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+		ADDED from [:url_launcher] /Users/sh/Documents/work/zaha/App/Zaha/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+ADDED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+		ADDED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+ADDED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
+		ADDED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
 provider#app.flutter.plugins.picker.ImagePickerFileProvider
-ADDED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
+ADDED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
 	android:grantUriPermissions
-		ADDED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
+		ADDED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
 	android:authorities
-		ADDED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
+		ADDED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
 	android:exported
-		ADDED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+		ADDED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
 	android:name
-		ADDED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-78
+		ADDED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-78
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:69
+ADDED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:69
 	android:resource
-		ADDED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-66
+		ADDED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-66
 	android:name
-		ADDED from [:picker] /Users/sh/Documents/zaha/zaha_ios/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
+		ADDED from [:picker] /Users/sh/Documents/work/zaha/App/Zaha/build/picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:connectivity] /Users/sh/Documents/zaha/zaha_ios/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+ADDED from [:connectivity] /Users/sh/Documents/work/zaha/App/Zaha/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
 MERGED from [com.google.android.gms:play-services-measurement:17.2.2] /Users/sh/.gradle/caches/transforms-2/files-2.1/6af98df3ae2e9eba5027061d10c6b472/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement:17.2.2] /Users/sh/.gradle/caches/transforms-2/files-2.1/6af98df3ae2e9eba5027061d10c6b472/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] /Users/sh/.gradle/caches/transforms-2/files-2.1/4cf11f806248f69485acbfe366b0122b/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:23:5-79
@@ -494,11 +494,11 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.2] /User
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.2] /Users/sh/.gradle/caches/transforms-2/files-2.1/2e10509c3458f89c5371eb4092336fa4/jetified-play-services-measurement-sdk-api-17.2.2/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.2] /Users/sh/.gradle/caches/transforms-2/files-2.1/2e10509c3458f89c5371eb4092336fa4/jetified-play-services-measurement-sdk-api-17.2.2/AndroidManifest.xml:24:5-79
 	android:name
-		ADDED from [:connectivity] /Users/sh/Documents/zaha/zaha_ios/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
+		ADDED from [:connectivity] /Users/sh/Documents/work/zaha/App/Zaha/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [:connectivity] /Users/sh/Documents/zaha/zaha_ios/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-76
+ADDED from [:connectivity] /Users/sh/Documents/work/zaha/App/Zaha/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-76
 	android:name
-		ADDED from [:connectivity] /Users/sh/Documents/zaha/zaha_ios/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-73
+		ADDED from [:connectivity] /Users/sh/Documents/work/zaha/App/Zaha/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-73
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
 ADDED from [com.google.firebase:firebase-auth:19.2.0] /Users/sh/.gradle/caches/transforms-2/files-2.1/bfc02847cc6a597096f8f8acddc81951/jetified-firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
 	android:excludeFromRecents

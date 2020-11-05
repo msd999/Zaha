@@ -1,4 +1,4 @@
-#Sun Nov 01 17:24:30 EET 2020
-base.0=/Users/sh/Documents/zaha/zaha_ios/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Thu Nov 05 17:12:06 EET 2020
+base.0=/Users/sh/Documents/work/zaha/App/Zaha/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

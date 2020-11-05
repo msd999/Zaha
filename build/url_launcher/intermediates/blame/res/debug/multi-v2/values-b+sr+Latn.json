@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sh/Documents/zaha/zaha_ios/build/url_launcher/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml",
+            "outputFile": "/Users/sh/Documents/work/zaha/App/Zaha/build/url_launcher/intermediates/res/merged/debug/values-b+sr+Latn/values-b+sr+Latn.xml",
             "map": [
                 {
                     "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/b2b51ad2129f7ae88186ad90508b79ab/core-1.1.0/res/values-b+sr+Latn/values-b+sr+Latn.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "/Users/sh/Documents/zaha/zaha_ios/build/url_launcher/intermediates/res/merged/debug/values-b+sr+Latn/values-b+sr+Latn.xml",
+            "outputFile": "/Users/sh/Documents/work/zaha/App/Zaha/build/url_launcher/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml",
             "map": [
                 {
                     "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/b2b51ad2129f7ae88186ad90508b79ab/core-1.1.0/res/values-b+sr+Latn/values-b+sr+Latn.xml",

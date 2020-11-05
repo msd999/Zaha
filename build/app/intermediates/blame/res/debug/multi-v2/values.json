@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sh/Documents/zaha/zaha_ios/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/sh/Documents/work/zaha/App/Zaha/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/be0ed6dae355adebfb0e21d1fd98f145/browser-1.0.0/res/values/values.xml",
@@ -76,24 +76,7 @@
                     }
                 },
                 {
-                    "source": "/Users/sh/Documents/zaha/zaha_ios/build/app/generated/res/google-services/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,304,386,490,599,719,813",
-                        "endColumns": "143,104,81,103,108,119,93,70",
-                        "endOffsets": "194,299,381,485,594,714,808,879"
-                    },
-                    "to": {
-                        "startLines": "385,388,389,390,391,392,393,394",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "27386,27661,27766,27848,27952,28061,28181,28275",
-                        "endColumns": "143,104,81,103,108,119,93,70",
-                        "endOffsets": "27525,27761,27843,27947,28056,28176,28270,28341"
-                    }
-                },
-                {
-                    "source": "/Users/sh/Documents/zaha/zaha_ios/android/app/src/main/res/values/strings.xml",
+                    "source": "/Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "2,4,5",
                         "startColumns": "4,4,4",
@@ -165,22 +148,20 @@
                     }
                 },
                 {
-                    "source": "/Users/sh/Documents/zaha/zaha_ios/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/sh/Documents/work/zaha/App/Zaha/build/app/generated/res/google-services/debug/values/values.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "353"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,304,386,490,599,719,813",
+                        "endColumns": "143,104,81,103,108,119,93,70",
+                        "endOffsets": "194,299,381,485,594,714,808,879"
                     },
                     "to": {
-                        "startLines": "1477",
-                        "startColumns": "4",
-                        "startOffsets": "97571",
-                        "endLines": "1481",
-                        "endColumns": "12",
-                        "endOffsets": "97863"
+                        "startLines": "385,388,389,390,391,392,393,394",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "27386,27661,27766,27848,27952,28061,28181,28275",
+                        "endColumns": "143,104,81,103,108,119,93,70",
+                        "endOffsets": "27525,27761,27843,27947,28056,28176,28270,28341"
                     }
                 },
                 {
@@ -238,6 +219,25 @@
                         "endLines": "79,80,198,199,200,201,202,203,204,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,281,282,286,287,288,289,290,291,292,293,294,295,296,303,396,1731,1735,1737,1743,1745,1883,1884,2628,2814,2846,2883,2890",
                         "endColumns": "68,62,69,67,71,69,60,73,72,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,64,58,58,59,59,59,59,59,59,59,59,59,59,58,59,59,59,59,59,59,59,59,59,59,58,59,59,58,58,58,58,58,58,34,34,54,62,54,57,56,49,60,56,33,34,34,69,70,116,12,109,12,128,71,66,24,24,24,24,24",
                         "endOffsets": "5496,5559,13719,13787,13859,13929,13990,14064,14137,14982,15043,15105,15169,15231,15292,15360,15460,15520,15586,15659,15728,15785,15837,15899,16636,16712,16777,16836,16895,16955,17015,17075,17135,17195,17255,17315,17375,17435,17495,17554,17614,17674,17734,17794,17854,17914,17974,18034,18094,18154,18213,18273,18333,18392,18451,18510,18569,18628,18687,18961,18996,19193,19256,19311,19369,19426,19476,19537,19594,19628,19663,19698,20111,28465,117177,117378,117554,117938,118133,129098,129165,169637,180787,182852,184612,184989"
+                    }
+                },
+                {
+                    "source": "/Users/sh/Documents/work/zaha/App/Zaha/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "353"
+                    },
+                    "to": {
+                        "startLines": "1477",
+                        "startColumns": "4",
+                        "startOffsets": "97571",
+                        "endLines": "1481",
+                        "endColumns": "12",
+                        "endOffsets": "97863"
                     }
                 }
             ]
