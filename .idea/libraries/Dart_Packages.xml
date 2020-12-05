@@ -135,6 +135,20 @@
             </list>
           </value>
         </entry>
+        <entry key="dependencies">
+          <value>
+            <list>
+              <option value="$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/dependencies-0.1.5/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="disposables">
+          <value>
+            <list>
+              <option value="$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/disposables-0.1.2/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="email_validator">
           <value>
             <list>
@@ -237,6 +251,13 @@
           <value>
             <list>
               <option value="$USER_HOME$/Downloads/flutter/packages/flutter/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="flutter_absolute_path">
+          <value>
+            <list>
+              <option value="$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_absolute_path-1.0.6/lib" />
             </list>
           </value>
         </entry>
@@ -443,6 +464,13 @@
             </list>
           </value>
         </entry>
+        <entry key="multi_image_picker">
+          <value>
+            <list>
+              <option value="$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/multi_image_picker-4.7.14/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="multiselect_formfield">
           <value>
             <list>
@@ -552,6 +580,13 @@
           <value>
             <list>
               <option value="$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-2.1.4+1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="responsive_grid">
+          <value>
+            <list>
+              <option value="$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/responsive_grid-1.2.1+1/lib" />
             </list>
           </value>
         </entry>
@@ -794,6 +829,8 @@
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/convert-2.1.1/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-2.1.5/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-0.1.3/lib" />
+      <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/dependencies-0.1.5/lib" />
+      <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/disposables-0.1.2/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/email_validator-1.0.6/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0-nullsafety.1/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/ffi-0.1.3/lib" />
@@ -808,6 +845,7 @@
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/flappy_search_bar-1.7.2/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/flare_dart-2.3.4/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/flare_flutter-2.0.6/lib" />
+      <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_absolute_path-1.0.6/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_blurhash-0.5.0/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_cache_manager-1.4.2/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_facebook_login-3.0.0/lib" />
@@ -834,6 +872,7 @@
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.10-nullsafety.1/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.3.0-nullsafety.3/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/motion_tab_bar-0.1.5/lib" />
+      <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/multi_image_picker-4.7.14/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/multiselect_formfield-0.1.4/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/octo_image-0.3.0/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0-nullsafety.1/lib" />
@@ -850,6 +889,7 @@
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-1.0.3/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/process-3.0.13/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-2.1.4+1/lib" />
+      <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/responsive_grid-1.2.1+1/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/rxdart-0.24.1/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.12+4/lib" />
       <root url="file://$USER_HOME$/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_linux-0.0.2+4/lib" />

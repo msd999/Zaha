@@ -116,6 +116,18 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "dependencies",
+      "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/dependencies-0.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "disposables",
+      "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/disposables-0.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "email_validator",
       "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/email_validator-1.0.6",
       "packageUri": "lib/",
@@ -204,6 +216,12 @@
       "rootUri": "file:///Users/sh/Downloads/flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "2.10"
+    },
+    {
+      "name": "flutter_absolute_path",
+      "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_absolute_path-1.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
     },
     {
       "name": "flutter_blurhash",
@@ -380,6 +398,12 @@
       "languageVersion": "2.1"
     },
     {
+      "name": "multi_image_picker",
+      "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/multi_image_picker-4.7.14",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "multiselect_formfield",
       "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/multiselect_formfield-0.1.4",
       "packageUri": "lib/",
@@ -474,6 +498,12 @@
       "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-2.1.4+1",
       "packageUri": "lib/",
       "languageVersion": "2.0"
+    },
+    {
+      "name": "responsive_grid",
+      "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/responsive_grid-1.2.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
     },
     {
       "name": "rxdart",
@@ -668,7 +698,7 @@
       "languageVersion": "2.2"
     }
   ],
-  "generated": "2020-11-05T15:02:32.402919Z",
+  "generated": "2020-12-02T18:03:13.328453Z",
   "generator": "pub",
   "generatorVersion": "2.10.3"
 }

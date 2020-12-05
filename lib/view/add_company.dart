@@ -2,15 +2,21 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_absolute_path/flutter_absolute_path.dart';
 import 'package:giffy_dialog/giffy_dialog.dart';
 import 'dart:io';
 import 'package:http/http.dart' as http;
+import 'package:http_parser/http_parser.dart';
+import 'package:multi_image_picker/multi_image_picker.dart';
 import 'package:picker/picker.dart';
+import 'package:responsive_grid/responsive_grid.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:zaha_application/controler/databasehelper.dart';
 import 'add_service.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:multiselect_formfield/multiselect_formfield.dart';
+
+import 'my_companies.dart';
 
 
 
@@ -187,6 +193,7 @@ class Add_companyState extends State<Add_company> {
 
   Future getImage() async {
     var image = await Picker.pickImage(
+
         source: ImageSource.gallery, maxHeight: 480, maxWidth: 640);
     base64Image = base64Encode(image.readAsBytesSync());
     // if you want save a file on gallery:
@@ -303,7 +310,6 @@ class Add_companyState extends State<Add_company> {
             children: [
 
               Container(
-
                   alignment: Alignment.center,
                   margin: EdgeInsets.only(top: 20, bottom: 20),
                   padding: EdgeInsets.only(left: 10, right: 10),
@@ -348,8 +354,15 @@ class Add_companyState extends State<Add_company> {
                                 SizedBox(
                                   height: 15,
                                 ),
+                                //comapny title
                                 TextFormField(
 
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                    //fontWeight: FontWeight.w600,
+                                    fontFamily: "CustomIcons",
+                                  ),
                                   controller: com_nameController,
                                   keyboardType: TextInputType.multiline,
                                   maxLines: null,
@@ -365,12 +378,21 @@ class Add_companyState extends State<Add_company> {
                                 SizedBox(
                                   height: 10,
                                 ),
+                                //manager name
                                 TextFormField(
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                    //fontWeight: FontWeight.w600,
+                                    fontFamily: "CustomIcons",
+                                  ),
+
                                   controller: man_nameController,
                                   keyboardType: TextInputType.multiline,
                                   maxLines: null,
                                   textAlign: TextAlign.right,
                                   decoration: InputDecoration(
+
                                       border: new OutlineInputBorder(
                                         borderRadius: const BorderRadius.all(
                                           const Radius.circular(5.0),
@@ -381,17 +403,25 @@ class Add_companyState extends State<Add_company> {
                                 SizedBox(
                                   height: 10,
                                 ),
-
-
                                 cat_list.length >0 ? DropdownButton(
                                   hint: SizedBox(
                                     width: MediaQuery.of(context).size.width/2, // for example
                                     child: Text("اختر اختصاص الشركة",
-                                      textAlign: TextAlign.right,textDirection: TextDirection.rtl,)
+                                      textAlign: TextAlign.right,textDirection: TextDirection.rtl, style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 16,
+                                        //fontWeight: FontWeight.w600,
+                                        fontFamily: "CustomIcons",
+                                      ),)
                                   ),
                                   items: cat_list.map((item) {
                                     return new DropdownMenuItem(
-                                      child: new Text(item['category']),
+                                      child: new Text(item['category'], style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 16,
+                                        //fontWeight: FontWeight.w600,
+                                        fontFamily: "CustomIcons",
+                                      )),
                                       value: item['cat_id'].toString(),
                                     );
                                   }).toList(),
@@ -405,9 +435,6 @@ class Add_companyState extends State<Add_company> {
                                   value: _mySelection,
 
                                 ):Center(child: new GFLoader(type:GFLoaderType.circle)),
-
-
-
                                 SizedBox(
                                   height: 10,
                                 ),
@@ -415,11 +442,21 @@ class Add_companyState extends State<Add_company> {
                                   hint: SizedBox(
                                       width: MediaQuery.of(context).size.width/2, // for example
                                       child: Text("اختر الدولة",
-                                        textAlign: TextAlign.right,textDirection: TextDirection.rtl,)
+                                        textAlign: TextAlign.right,textDirection: TextDirection.rtl,style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          //fontWeight: FontWeight.w600,
+                                          fontFamily: "CustomIcons",
+                                        ),)
                                   ),
                                   items: countries_list.map((item) {
                                     return new DropdownMenuItem(
-                                      child: new Text(item['country']),
+                                      child: new Text(item['country'], style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 16,
+                                        //fontWeight: FontWeight.w600,
+                                        fontFamily: "CustomIcons",
+                                      )),
                                       value: item['country_id'].toString(),
                                     );
                                   }).toList(),
@@ -438,64 +475,29 @@ class Add_companyState extends State<Add_company> {
                                   value: _mycountrySelection,
 
                                 ):Center(child: new GFLoader(type:GFLoaderType.circle)):Center(child: new GFLoader(type:GFLoaderType.circle)),
-
                                 SizedBox(
                                   height: 10,
                                 ),
-                                /*is_city? MultiSelectFormField(
-
-                                  autovalidate: false,
-
-                                  chipBackGroundColor: Colors.red,
-                                  chipLabelStyle: TextStyle(fontWeight: FontWeight.bold),
-                                  dialogTextStyle: TextStyle(fontWeight: FontWeight.bold,),
-                                  checkBoxActiveColor: Colors.red,
-                                  checkBoxCheckColor: Colors.green,
-                                  dialogShapeBorder: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.all(Radius.circular(12.0))),
-                                  title: Text(
-                                    "اختر المدن التي توجد فيها شركتك",
-                                    style: TextStyle(fontSize: 16),
-                                    textDirection: TextDirection.rtl,
-                                  ),
-                                  dataSource: [
-                                    {
-                                      "display": "Running",
-                                      "value": "Running",
-                                    },
-                                    {
-                                      "display": "Climbing",
-                                      "value": "Climbing",
-                                    },
-                                    {
-                                      "display": "Walking",
-                                      "value": "Walking",
-                                    },
-                                  ],
-                                  textField: 'display',
-                                  valueField: 'value',
-                                  okButtonLabel: 'موافق',
-                                  cancelButtonLabel: 'إلغاء',
-                                  hintWidget: Text('من فضلك اختر مدينة أو أكثر',textDirection: TextDirection.rtl,textAlign: TextAlign.right,),
-                                  initialValue: _myActivities,
-                                  onSaved: (value) {
-                                    if (value == null) return;
-                                    setState(() {
-                                      _myActivities = value;
-                                    });
-                                  },
-                                ):Container(),*/
-
                                 is_city ? city_list.length>0 ? DropdownButton(
                                   hint: SizedBox(
                                       width: MediaQuery.of(context).size.width/2, // for example
                                       child: Text("اختر المدينة",
-                                        textAlign: TextAlign.right,textDirection: TextDirection.rtl,)
+                                        textAlign: TextAlign.right,textDirection: TextDirection.rtl,style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          //fontWeight: FontWeight.w600,
+                                          fontFamily: "CustomIcons",
+                                        ),)
                                   ),
                                   items: city_list.map((item) {
                                     //_mycitySelection = item['city_id'].toString();
                                     return new DropdownMenuItem(
-                                      child: new Text(item['city']),
+                                      child: new Text(item['city'], style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 16,
+                                        //fontWeight: FontWeight.w600,
+                                        fontFamily: "CustomIcons",
+                                      )),
                                       value: item['city_id'].toString(),
                                     );
                                   }).toList(),
@@ -508,11 +510,17 @@ class Add_companyState extends State<Add_company> {
                                   value: _mycitySelection,
 
                                 ):Center(child: new GFLoader(type:GFLoaderType.circle)):Container(),
-
                                 SizedBox(
                                   height: 20,
                                 ),
+                                //company address
                                 TextFormField(
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                    //fontWeight: FontWeight.w600,
+                                    fontFamily: "CustomIcons",
+                                  ),
                                   controller: addressController,
                                   keyboardType: TextInputType.multiline,
                                   maxLines: null,
@@ -528,9 +536,17 @@ class Add_companyState extends State<Add_company> {
                                 SizedBox(
                                   height: 10,
                                 ),
+                                //about comapny
                                 TextFormField(
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                    //fontWeight: FontWeight.w600,
+                                    fontFamily: "CustomIcons",
+                                  ),
                                   controller: com_aboutController,
                                   keyboardType: TextInputType.multiline,
+                                  minLines: 3,
                                   maxLines: null,
                                   textAlign: TextAlign.right,
                                   decoration: InputDecoration(
@@ -544,9 +560,16 @@ class Add_companyState extends State<Add_company> {
                                 SizedBox(
                                   height: 10,
                                 ),
+                                //phone numbers
                                 TextFormField(
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                    //fontWeight: FontWeight.w600,
+                                    fontFamily: "CustomIcons",
+                                  ),
                                   controller: phonesController,
-                                  keyboardType: TextInputType.multiline,
+                                  keyboardType: TextInputType.text,
                                   maxLines: null,
                                   textAlign: TextAlign.right,
                                   decoration: InputDecoration(
@@ -561,13 +584,24 @@ class Add_companyState extends State<Add_company> {
                                   "لإضافة أكثر من رقم استخدم الفاصلة, مثال: 0988776655, 0933111222",
                                   textDirection: TextDirection.rtl,
                                   style: TextStyle(
-                                      fontSize: 12, color: Colors.grey),),
+                                    color: Colors.grey,
+                                    fontSize: 12,
+                                    //fontWeight: FontWeight.w600,
+                                    fontFamily: "CustomIcons",
+                                  ),),
                                 SizedBox(
                                   height: 10,
                                 ),
+                                //whatsapp number
                                 TextFormField(
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                    //fontWeight: FontWeight.w600,
+                                    fontFamily: "CustomIcons",
+                                  ),
                                   controller: whatsappController,
-                                  keyboardType: TextInputType.multiline,
+                                  keyboardType: TextInputType.text,
                                   maxLines: null,
                                   textAlign: TextAlign.right,
                                   decoration: InputDecoration(
@@ -582,11 +616,22 @@ class Add_companyState extends State<Add_company> {
                                   "لإضافة أكثر من رقم استخدم الفاصلة, مثال: 0988776655, 0933111222",
                                   textDirection: TextDirection.rtl,
                                   style: TextStyle(
-                                      fontSize: 12, color: Colors.grey),),
+                                    color: Colors.grey,
+                                    fontSize: 12,
+                                    //fontWeight: FontWeight.w600,
+                                    fontFamily: "CustomIcons",
+                                  ),),
                                 SizedBox(
                                   height: 10,
                                 ),
+                                //email
                                 TextFormField(
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                    //fontWeight: FontWeight.w600,
+                                    fontFamily: "CustomIcons",
+                                  ),
                                   controller: emailController,
                                   keyboardType: TextInputType.multiline,
                                   maxLines: null,
@@ -602,7 +647,8 @@ class Add_companyState extends State<Add_company> {
                                 SizedBox(
                                   height: 10,
                                 ),
-                                SizedBox(
+                                //chose logo image
+                                /*SizedBox(
                                   width: double.infinity, // match_parent
                                   child: RaisedButton(
                                     color: Colors.blueAccent,
@@ -618,22 +664,42 @@ class Add_companyState extends State<Add_company> {
                                     onPressed: getImage,
 
                                   ),),
-
-
                                 SizedBox(
                                   height: 5,
                                 ),
+                                //display logo image
                                 _image == null
                                     ? Image.asset('assets/img/default_logo.png')
-                                    : Image.file(_image),
+                                    : Image.file(_image),*/
 
 
                                 SizedBox(
                                   height: 15,
                                 ),
+                                //send button
+                                Column(
+                                  children: <Widget>[
+                                    //Center(child: Text('Error: $_error')),
+                                    logo_image_button(),
 
+                                    buildGridView_logo(),
+                                  ],
+                                ),
 
-                          InkWell(onTap:(){send_order(); } , child: Container(
+                                SizedBox(
+                                  height: 15,
+                                ),
+                                //send button
+                                Column(
+                                  children: <Widget>[
+                                    //Center(child: Text('Error: $_error')),
+                                    image_button(),
+
+                                    buildGridView(),
+                                  ],
+                                ),
+
+                                InkWell(onTap:(){send_order(); } , child: Container(
                             width: MediaQuery.of(context).size.width,
                             padding: EdgeInsets.symmetric(vertical: 15),
                             alignment: Alignment.center,
@@ -763,13 +829,86 @@ class Add_companyState extends State<Add_company> {
         setState(() {
           lsubmit_btn_child_index = 0;
         });        return;
-      } else if (_image.lengthSync() > 2000000) {
-        _showDialog("لا يمكن أن يتجاوز حجم الصورة ٢ ميغابايت.");
+      } else if (logo_image == null || logo_image.length == 0) {
+
+          _showDialog("يرجى اختيار صورة اللوغو");
+          setState(() {
+            lsubmit_btn_child_index = 0;
+          });        return;
+
+
+      } else {
+
+        ////////get user parameter///////
+        final prefs = await SharedPreferences.getInstance();
+        final key = 'token';
+        final value = prefs.get(key) ?? 0;
+
+
+
+        //////parameter
+
+        Uri uri = Uri.parse('https://zaha-app.com/api/app-api/add_company2.php');
+        http.MultipartRequest request = http.MultipartRequest("POST", uri);
+
+        Map<String, String> postBody = new Map<String, String>();
+
+        postBody.putIfAbsent('token', () => value);
+        postBody.putIfAbsent('manager', () => '${man_nameController.text}');
+        postBody.putIfAbsent('whatsapp', () => '${whatsappController.text}');
+        postBody.putIfAbsent('address', () => '${addressController.text}');
+        postBody.putIfAbsent('email', () => '${emailController.text}');
+        postBody.putIfAbsent('phone', () => '${phonesController.text}');
+        postBody.putIfAbsent('details', () => '${com_aboutController.text}');
+        postBody.putIfAbsent('cat_id', () => '${_mySelection}');
+        postBody.putIfAbsent('cname', () => '${com_nameController.text}');
+
+
+        var path = await FlutterAbsolutePath.getAbsolutePath(logo_image[0].identifier);
+        File service_image = new File(path);
+        base64Image = base64Encode(service_image.readAsBytesSync());
+        postBody.putIfAbsent('image', () => '${base64Image}');
+
+
+
+        for (var i = 0; i < images.length; i++) {
+          var path = await FlutterAbsolutePath.getAbsolutePath(images[i].identifier);
+
+          File service_image = new File(path);
+          base64Image = base64Encode(service_image.readAsBytesSync());
+          postBody.putIfAbsent('imgs_file $i', () => '${base64Image}');
+
+          /*request.files.add(await http.MultipartFile.fromPath('imgs_file$i', path,
+              contentType: new MediaType('application', 'x-tar')));*/
+
+          //final file = File(path);
+        }
+
+        request.fields.addAll(postBody);
+
+        /*request.files.add(await http.MultipartFile.fromPath('logo', _image.path,
+            contentType: new MediaType('application', 'x-tar')));*/
+
+        print("start send");
+        http.Response response2 =
+        await http.Response.fromStream(await request.send());
+        print(response2.body.toString());
+        var res = json.decode(response2.body);
+
+        if (res["error"] != 1) {
+          Navigator.of(context).popUntil((route) => route.isFirst);
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context) => MyCompanies()));
+        } else {
+          _showDialog("حدث خطأ! يرجى المحاولة لاحقاً.");
+        }
+        print("Result: ${response2.statusCode}");
+        print("Result: ${response2.body}");
+
         setState(() {
           lsubmit_btn_child_index = 0;
-        });        return;
-      } else {
-        startUpload(_image);
+        });
+
+        //startUpload(_image);
         /*setState(() {
           lsubmit_btn_child_index = 0;
         }); */       /*databaseHelper.send_work_order(com_nameController.text,man_nameController.text,categoryController.text,addressController.text);
@@ -792,6 +931,8 @@ class Add_companyState extends State<Add_company> {
 
   }
 
+
+
   submite_button_child() {
     if (lsubmit_btn_child_index == 0) {
       return Text(
@@ -808,4 +949,207 @@ class Add_companyState extends State<Add_company> {
       );
     }
   }
+
+  ////////services images///////
+  List<Asset> images = List<Asset>();
+
+  Widget image_button() {
+    return InkWell(
+      onTap: () {
+        loadAssets();
+      },
+      child: Container(
+        width: MediaQuery.of(context).size.width,
+        margin: const EdgeInsets.only(
+            top: 10.0, right: 5.0, left: 5.0, bottom: 10),
+        padding: EdgeInsets.symmetric(vertical: 5),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(5)),
+          color: Color(0xFFdd685f),
+        ),
+        child: Text(
+          'انقر لاختيار صور الخدمات',
+          style: TextStyle(
+              fontSize: 18, color: Colors.white, fontFamily: "CustomIcons"),
+        ),
+      ),
+    );
+  }
+
+  Widget buildGridView() {
+
+
+
+    if (images != null)
+      return ResponsiveGridRow(
+        children: [
+          for (var i = 0; i < images.length; i++)
+            ResponsiveGridCol(
+              xs: 6,
+              md: 4,
+              child: Container(
+                margin: const EdgeInsets.all(3.0),
+                padding: const EdgeInsets.all(0),
+                /*decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Color(0xFFebebeb),
+
+              ),*/
+                height: 230,
+                alignment: Alignment(0, 0),
+                //color: Colors.grey,
+                child: Column(children: [ AssetThumb(
+                  asset: images[i],
+                  width: 300,
+                  height: 300,
+                ),
+
+                  IconButton(
+                    icon:
+                    Icon(Icons.delete),
+                    color:
+                    Colors.red,
+                    onPressed:
+                        () {
+                      setState(() {
+                        print(images.length.toString());
+                        //images.remove(i);
+                        images.removeAt(i);
+                        print(images.length.toString());
+
+                      });
+                      //_deletePost(post.id);
+                    },
+                  ),
+                ],),
+              ),
+            ),
+        ],
+      );
+    else
+      return Container();
+  }
+
+  Future<void> loadAssets() async {
+    List<Asset> images_temp = List<Asset>();
+
+    setState(() {
+      images_temp = List<Asset>();
+    });
+
+    List<Asset> resultList;
+    String error;
+
+    try {
+      resultList = await MultiImagePicker.pickImages(
+        maxImages: 30,
+        enableCamera: true,
+        selectedAssets: images,
+      );
+    } on Exception catch (e) {
+      error = e.toString();
+    }
+
+    // If the widget was removed from the tree while the asynchronous platform
+    // message was in flight, we want to discard the reply rather than calling
+    // setState to update our non-existent appearance.
+    if (!mounted) return;
+
+    setState(() {
+      images = resultList ;
+    });
+  }
+  /////////////////////////
+
+  ////////logo images///////
+    List<Asset> logo_image = List<Asset>();
+
+    Widget logo_image_button() {
+      return InkWell(
+        onTap: () {
+          loadAssets_logo();
+        },
+        child: Container(
+          width: MediaQuery.of(context).size.width,
+          margin: const EdgeInsets.only(
+              top: 10.0, right: 5.0, left: 5.0, bottom: 10),
+          padding: EdgeInsets.symmetric(vertical: 5),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(5)),
+            color: Color(0xFFdd685f),
+          ),
+          child: Text(
+            'اختيار صورة لوغو الشركة',
+            style: TextStyle(
+                fontSize: 18, color: Colors.white, fontFamily: "CustomIcons"),
+          ),
+        ),
+      );
+    }
+
+    Widget buildGridView_logo() {
+      if (logo_image != null) {
+        if(logo_image.length > 0) {
+          return ResponsiveGridRow(
+            children: [
+              ResponsiveGridCol(
+                xs: 12,
+                md: 12,
+                child: Container(
+                  margin: const EdgeInsets.all(3.0),
+                  padding: const EdgeInsets.all(0),
+                  height: 300,
+                  alignment: Alignment(0, 0),
+                  //color: Colors.grey,
+                  child: Column(children: [ AssetThumb(
+                    asset: logo_image[0],
+                    width: 300,
+                    height: 300,
+                  ),
+                  ],),
+                ),
+              ),
+            ],
+          );
+
+      }else {
+        return Container();
+      }
+      }else {
+        return Container();
+      }
+    }
+
+    Future<void> loadAssets_logo() async {
+      List<Asset> images_temp = List<Asset>();
+
+      setState(() {
+        images_temp = List<Asset>();
+      });
+
+      List<Asset> resultList;
+      String error;
+
+      try {
+        resultList = await MultiImagePicker.pickImages(
+          maxImages: 1,
+          enableCamera: true,
+          selectedAssets: logo_image,
+        );
+      } on Exception catch (e) {
+        error = e.toString();
+      }
+
+      // If the widget was removed from the tree while the asynchronous platform
+      // message was in flight, we want to discard the reply rather than calling
+      // setState to update our non-existent appearance.
+      if (!mounted) return;
+
+      setState(() {
+        logo_image = resultList ;
+      });
+    }
+  /////////////////////////
 }

@@ -33,7 +33,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 30
 
     lintOptions {
         disable 'InvalidPackage'
@@ -42,10 +42,10 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.zahasri.zaha_application"
-        minSdkVersion 16
-        targetSdkVersion 28
-        versionCode 113
-        versionName "4.0.0"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 115
+        versionName "4.1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {

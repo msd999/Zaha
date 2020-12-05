@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sh/Documents/zaha/zaha_ios/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-id/values-id.xml",
+            "outputFile": "/Users/sh/Documents/work/zaha/App/Zaha/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-id/values-id.xml",
             "map": [
                 {
                     "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/95291edf3c355fefa99d1c4d02fdf606/jetified-facebook-common-5.5.1/res/values-id/values-id.xml",

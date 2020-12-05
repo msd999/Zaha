@@ -1,4 +1,5 @@
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:zaha_application/tab/order.dart';
 import 'package:zaha_application/view/about_us.dart';
@@ -29,6 +30,8 @@ class MyApp extends StatefulWidget{
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        DefaultCupertinoLocalizations.delegate
       ],
       supportedLocales: [
         Locale('ar', 'AE'), // OR Locale('ar', 'AE') OR Other RTL locales

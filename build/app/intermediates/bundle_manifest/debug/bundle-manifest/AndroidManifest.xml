@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zahasri.zaha_application"
-    android:versionCode="113"
-    android:versionName="4.0.0" >
+    android:versionCode="114"
+    android:versionName="4.1.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="28" />
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30" />
     <!--
          io.flutter.app.FlutterApplication is an android.app.Application that
          calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -185,6 +185,26 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+        <provider
+            android:name="com.sangcomz.fishbun.FishBunFileProvider"
+            android:authorities="com.zahasri.zaha_application.fishbunfileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.sangcomz.fishbun.ui.album.AlbumActivity"
+            android:label="@string/album"
+            android:theme="@style/FishBunTheme" />
+        <activity
+            android:name="com.sangcomz.fishbun.ui.picker.PickerActivity"
+            android:theme="@style/FishBunTheme" />
+        <activity
+            android:name="com.sangcomz.fishbun.ui.detail.DetailActivity"
+            android:theme="@style/DetailViewTheme" />
         <activity android:name="com.facebook.CustomTabMainActivity" />
         <!--
          The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically

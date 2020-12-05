@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/flutter_open_whatsapp.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		H5dOGpOj4Y4VmI5WynUJLlmjx2M=
+		xkWl+u+qtdk27Xk5bpyjNS60PVg=
 		</data>
 		<key>Modules/flutter_open_whatsapp.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/flutter_open_whatsapp.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		H5dOGpOj4Y4VmI5WynUJLlmjx2M=
+		xkWl+u+qtdk27Xk5bpyjNS60PVg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -121,11 +121,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H5dOGpOj4Y4VmI5WynUJLlmjx2M=
+			xkWl+u+qtdk27Xk5bpyjNS60PVg=
 			</data>
 			<key>hash2</key>
 			<data>
-			kf0D9GqAXIQWEpdIptfdcdWf+0MZaSPf35kmwXGIPJc=
+			nT6au9+HgpZ6j25KxBC++oS3wHboE6cAgLHsvMXN3Zk=
 			</data>
 		</dict>
 		<key>Modules/flutter_open_whatsapp.swiftmodule/x86_64.swiftdoc</key>
@@ -143,11 +143,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H5dOGpOj4Y4VmI5WynUJLlmjx2M=
+			xkWl+u+qtdk27Xk5bpyjNS60PVg=
 			</data>
 			<key>hash2</key>
 			<data>
-			kf0D9GqAXIQWEpdIptfdcdWf+0MZaSPf35kmwXGIPJc=
+			nT6au9+HgpZ6j25KxBC++oS3wHboE6cAgLHsvMXN3Zk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

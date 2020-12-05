@@ -18,7 +18,7 @@ class NavDrawer extends StatefulWidget {
 
 class NavDrawerState extends State<NavDrawer> {
 
-  String user_name;
+  String user_name = 'زائر';
   var gust = false;
   check_if_gust() async{
     final prefs = await SharedPreferences.getInstance();

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sh/Documents/zaha/zaha_ios/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-nl/values-nl.xml",
+            "outputFile": "/Users/sh/Documents/work/zaha/App/Zaha/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-nl/values-nl.xml",
             "map": [
                 {
                     "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/ad072bd06501b4ced252e97ed9ee745e/jetified-play-services-basement-17.0.0/res/values-nl/values.xml",

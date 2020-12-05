@@ -27,6 +27,8 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"공유 대상"</string>
     <string msgid="3300176832234831527" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g>와(과) 공유"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"접기"</string>
+    <string name="album">앨범</string>
+    <string name="camera">카메라</string>
     <string gender="unknown" name="com_facebook_device_auth_instructions">&lt;b>facebook.com/device&lt;/b>에 방문하여 위 코드를 입력하세요.</string>
     <string gender="unknown" name="com_facebook_image_download_unknown_error">이미지를 다운로드하는 중 예기치 않은 오류가 발생했습니다.</string>
     <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView 로그인에 인터넷 권한이 필요합니다</string>
@@ -68,6 +70,14 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"스마트폰에서 열기"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"로그인"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google 계정으로 로그인"</string>
+    <string name="done">완료</string>
+    <string name="done_all">모두 선택 완료</string>
+    <string name="msg_error">일시적인 오류가 발생했습니다. 잠시후에 다시 시도해주세요.</string>
+    <string name="msg_full_image">더 이상 선택할 수 없습니다.</string>
+    <string name="msg_no_image">앨범이 없습니다.\n사진을 찍어보세요!</string>
+    <string name="msg_no_selected">선택된 이미지가 없습니다.</string>
+    <string name="msg_permission">권한이 거부 됐습니다.</string>
     <string msgid="146198913615257606" name="search_menu_title">"검색"</string>
     <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="str_all_view">전체사진</string>
 </resources>

@@ -6,6 +6,11 @@ PODS:
   - AppAuth/ExternalUserAgent (1.4.0)
   - apple_sign_in (0.0.1):
     - Flutter
+  - BSGridCollectionViewLayout (1.2.5)
+  - BSImagePicker (2.10.3):
+    - BSGridCollectionViewLayout (= 1.2.5)
+    - BSImageView (= 1.0.3)
+  - BSImageView (1.0.3)
   - connectivity (0.0.1):
     - Flutter
     - Reachability
@@ -63,6 +68,8 @@ PODS:
     - GoogleUtilities/UserDefaults (~> 6.7)
     - PromisesObjC (~> 1.2)
   - Flutter (1.0.0)
+  - flutter_absolute_path (0.0.1):
+    - Flutter
   - flutter_facebook_login (0.0.1):
     - FBSDKCoreKit (~> 5.5)
     - FBSDKLoginKit (~> 5.5)
@@ -114,6 +121,9 @@ PODS:
   - GTMSessionFetcher/Core (1.4.0)
   - GTMSessionFetcher/Full (1.4.0):
     - GTMSessionFetcher/Core (= 1.4.0)
+  - multi_image_picker (4.7.14):
+    - BSImagePicker (~> 2.10.3)
+    - Flutter
   - nanopb (1.30906.0):
     - nanopb/decode (= 1.30906.0)
     - nanopb/encode (= 1.30906.0)
@@ -139,9 +149,11 @@ DEPENDENCIES:
   - firebase_auth (from `.symlinks/plugins/firebase_auth/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - Flutter (from `Flutter`)
+  - flutter_absolute_path (from `.symlinks/plugins/flutter_absolute_path/ios`)
   - flutter_facebook_login (from `.symlinks/plugins/flutter_facebook_login/ios`)
   - flutter_open_whatsapp (from `.symlinks/plugins/flutter_open_whatsapp/ios`)
   - google_sign_in (from `.symlinks/plugins/google_sign_in/ios`)
+  - multi_image_picker (from `.symlinks/plugins/multi_image_picker/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
   - picker (from `.symlinks/plugins/picker/ios`)
   - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
@@ -151,6 +163,9 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AppAuth
+    - BSGridCollectionViewLayout
+    - BSImagePicker
+    - BSImageView
     - FBSDKCoreKit
     - FBSDKLoginKit
     - Firebase
@@ -181,12 +196,16 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/firebase_core/ios"
   Flutter:
     :path: Flutter
+  flutter_absolute_path:
+    :path: ".symlinks/plugins/flutter_absolute_path/ios"
   flutter_facebook_login:
     :path: ".symlinks/plugins/flutter_facebook_login/ios"
   flutter_open_whatsapp:
     :path: ".symlinks/plugins/flutter_open_whatsapp/ios"
   google_sign_in:
     :path: ".symlinks/plugins/google_sign_in/ios"
+  multi_image_picker:
+    :path: ".symlinks/plugins/multi_image_picker/ios"
   path_provider:
     :path: ".symlinks/plugins/path_provider/ios"
   picker:
@@ -201,6 +220,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   apple_sign_in: 7716c7ddfa195aeab7dec0dc374ef4ff45d1adb4
+  BSGridCollectionViewLayout: 333dcb457a5a3bdd9212607ab5756553dcfe06cb
+  BSImagePicker: 07404254f2fcdaf5a2eb403c0f8c337267ce8738
+  BSImageView: a149459433a2687157d034c78e059d30ac7f2544
   connectivity: c4130b2985d4ef6fd26f9702e886bd5260681467
   FBSDKCoreKit: 1d5acf7c9d7a2f92bb1a242dc60cae5b7adb91df
   FBSDKLoginKit: f1ea8026a58b52d30c9f2e6a58ca7d813619fb83
@@ -213,6 +235,7 @@ SPEC CHECKSUMS:
   FirebaseCoreDiagnostics: 770ac5958e1372ce67959ae4b4f31d8e127c3ac1
   FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_absolute_path: 5adb13678c88f0bdfba527f3851f9543d01dde66
   flutter_facebook_login: cfb5659f686b1c575ef205c6b6fd20db9679d3c4
   flutter_open_whatsapp: 4b54cd5403cfe53414e4252fd52fc27f79635f58
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
@@ -223,6 +246,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
   GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  multi_image_picker: c068931d08240565e0615fb01437d16984909183
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
   picker: 7e273f224501da96e240dfcf51d319c1ff019c05
@@ -234,4 +258,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: ffd7293eb7d5907b54a367fd400872baeef513a5
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0
