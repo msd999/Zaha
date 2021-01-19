@@ -522,8 +522,12 @@ class DetailState extends State<CompanyDetailPagee> {
           size: 40,
           color: Colors.indigo,
         ),
+
         onPressed: () {
-          launchMailto;
+          //print(widget.email.trim());
+          launchMailto();
+           //launch('mailto:smith@example.org?subject=News&body=New%20plugin');
+
         });
 
     /*return InkWell (onTap: launchMailto,
@@ -565,6 +569,7 @@ class DetailState extends State<CompanyDetailPagee> {
 
 
   launchMailto() async {
+    print(widget.email.trim());
     final mailtoLink = Mailto(
       to: [widget.email.trim()],
       //cc: ['info@zaha-app.com'],
@@ -574,7 +579,16 @@ class DetailState extends State<CompanyDetailPagee> {
     // Convert the Mailto instance into a string.
     // Use either Dart's string interpolation
     // or the toString() method.
+    /*final Uri _emailLaunchUri = Uri(
+        scheme: 'mailto',
+        path: '${widget.email.trim()}',
+        queryParameters: {
+          'subject': 'من أحد مستخدمي تطبيق زها'
+        }
+    );*/
     await launch('$mailtoLink');
+    //await launch(_emailLaunchUri.toString());
+    //await launch('mailto:smith@example.org?subject=News&body=New%20plugin');
   }
 
   _initCalla() async {

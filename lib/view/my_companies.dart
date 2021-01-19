@@ -8,10 +8,12 @@ import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:picker/picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:zaha_application/Widget/NavDrawer.dart';
 import 'package:zaha_application/controler/databasehelper.dart';
 import 'package:getwidget/getwidget.dart';
 import 'add_company.dart';
 import 'companydetail.dart';
+import 'edit_company.dart';
 
 
 var fullwidth;
@@ -146,6 +148,7 @@ class MyCompaniesState extends State<MyCompanies> {
     return gust ? gust_user()
         : Scaffold(
       backgroundColor: const Color(0xff222838),
+      drawer: NavDrawer(),
       appBar: AppBar(
         backgroundColor: Colors.deepOrange,
         title: Text('شركاتي', style: TextStyle(
@@ -218,6 +221,19 @@ class BikeListItem extends StatelessWidget {
           shrinkWrap: true,
           itemCount:list1.length,
           itemBuilder: (context,i){
+            var bg_color = Colors.green;
+            String status = 'منشور';
+            if(list1[i]['state'] == '2')
+            {
+              bg_color = Colors.orange;
+              status = 'قيد المراجعة';
+            }
+
+            else if(list1[i]['state'] == '0')
+            {
+              bg_color = Colors.red;
+              status = 'مرفوض';
+            }
             return new Container(
 
               padding: const EdgeInsets.all(10.0),
@@ -263,8 +279,8 @@ class BikeListItem extends StatelessWidget {
 
                           child: Image.network(
                             'https://zaha-app.com/dash/logo/${list1[i]['logo']}',
-                            fit: BoxFit.fill,
-                            height: MediaQuery.of(context).size.width/1.5,),
+                            fit: BoxFit.cover,
+                            height: MediaQuery.of(context).size.width/3,),
 
 
                         ),
@@ -276,8 +292,22 @@ class BikeListItem extends StatelessWidget {
 
                           child: Text(list1[i]["cname"],textAlign: TextAlign.center,
                             style: TextStyle(
-                              fontSize: 22,
+                              fontSize: 24,
                               color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: "CustomIcons",
+                            ),softWrap: true,),
+
+
+                        ),
+
+                        Padding(
+                          padding: const EdgeInsets.all(4.0),
+
+                          child: Text('الحالة: $status',textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: bg_color,
                               fontFamily: "CustomIcons",
                             ),softWrap: true,),
 
@@ -285,6 +315,36 @@ class BikeListItem extends StatelessWidget {
                         ),
 
 
+                        Padding(
+                          padding: EdgeInsets.all(3),
+                          child:
+                          RaisedButton.icon(
+                              label: Text(
+                                'تعديل بيانات الشركة',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.normal,
+                                  fontFamily: "CustomIcons",
+                                ),
+                              ),
+                              icon: Icon(Icons.edit),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5.0)),
+                              color: Colors.grey,
+                              textColor: Colors.black,
+                              padding: const EdgeInsets.symmetric(
+                                vertical: 16.0,
+                                horizontal: 32.0,
+                              ),
+                              onPressed: () => {
+                                Navigator.of(context).push(
+                                  new MaterialPageRoute(
+                                      builder: (BuildContext context) => new edit_company(id: list1[i]["cid"]))),
+
+                              }
+
+                          ),
+
+                        ),
 
 
 

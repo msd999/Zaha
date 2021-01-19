@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "com.zahasri.zaha_application",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 113,
+        "versionName": "4.0.0",
+        "outputFile": "app-profile.apk",
+        "fullName": "profile",
+        "baseName": "profile",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.zahasri.zaha_application",
+        "split": "",
+        "minSdkVersion": "16"
+      }
+    }
+  ]
+}

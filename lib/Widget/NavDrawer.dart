@@ -9,6 +9,7 @@ import 'package:zaha_application/view/favourite.dart';
 import 'package:zaha_application/view/feedbacks.dart';
 import 'package:zaha_application/view/loginPage.dart';
 import 'package:zaha_application/view/my_companies.dart';
+import 'package:zaha_application/view/newhome.dart';
 
 class NavDrawer extends StatefulWidget {
   @override
@@ -53,13 +54,14 @@ class NavDrawerState extends State<NavDrawer> {
         padding: EdgeInsets.zero,
         children: <Widget>[
           DrawerHeader(
+
             child: Column(
               children: <Widget>[
                 Container(
                     //margin: EdgeInsets.only(top: 10),
                     child: CircleAvatar(
                       radius: 50,
-                      backgroundColor: Colors.white,
+                      backgroundColor: Color(0xFF275879),
                       child: Image.asset('assets/img/profile.png',width: 150.0,height: 150.0,),
                     )
                 ),
@@ -79,54 +81,82 @@ class NavDrawerState extends State<NavDrawer> {
               ],
             ),
             decoration: BoxDecoration(
-                color: Colors.deepOrange,
+                color: Color(0xFF275879),
                 ),
           ),
           ListTile(
+            leading: Icon(Icons.home),
+            title: Text('الرئيسية',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: "CustomIcons",
+                  fontSize: 18),),
+            onTap: () => {Navigator.of(context).push(
+                new MaterialPageRoute(
+                    builder: (BuildContext context) => new Example()))},
+          ),
+          ListTile(
             leading: Icon(Icons.add),
-            title: Text('شركاتي'),
+            title: Text('شركاتي',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: "CustomIcons",
+                  fontSize: 18),),
             onTap: () => {Navigator.of(context).push(
                 new MaterialPageRoute(
                     builder: (BuildContext context) => new MyCompanies()))},
           ),
           ListTile(
             leading: Icon(Icons.verified_user),
-            title: Text('حسابي'),
+            title: Text('حسابي',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: "CustomIcons",
+                  fontSize: 18),),
             onTap: () => {Navigator.of(context).push(
                 new MaterialPageRoute(
                     builder: (BuildContext context) => new profile()))},
           ),
-          /*ListTile(
-            leading: Icon(Icons.settings),
-            title: Text('Settings'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),*/
           ListTile(
             leading: Icon(FontAwesomeIcons.info),
-            title: Text('من نحن'),
+            title: Text('من نحن',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: "CustomIcons",
+                  fontSize: 18),),
             onTap: () => {Navigator.of(context).push(
                 new MaterialPageRoute(
                     builder: (BuildContext context) => new about_us()))},
           ),
           ListTile(
             leading: Icon(Icons.favorite),
-            title: Text('المفضلة'),
+            title: Text('المفضلة',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: "CustomIcons",
+                  fontSize: 18),),
             onTap: () => {Navigator.of(context).push(
             new MaterialPageRoute(
             builder: (BuildContext context) => new favouritetab()))},
           ),
-
-          /*ListTile(
-            leading: Icon(Icons.feedback),
-            title: Text('آراء المستخدمين'),
-            onTap: () => {Navigator.of(context).push(
-                new MaterialPageRoute(
-                    builder: (BuildContext context) => new feedbacks()))},
-          ),*/
-
           ListTile(
             leading: Icon(Icons.exit_to_app),
-            title: gust ? Text('تسجيل الدخول'):Text('تسجيل خروج'),
+            title: gust ? Text('تسجيل الدخول',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: "CustomIcons",
+                  fontSize: 18),):Text('تسجيل خروج',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: "CustomIcons",
+                  fontSize: 18),),
             onTap: ()async{
               final prefs = await SharedPreferences.getInstance();
               final key = 'token';

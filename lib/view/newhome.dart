@@ -5,6 +5,7 @@ import 'package:zaha_application/style/consts.dart';
 import 'package:zaha_application/tab/Search.dart';
 import 'package:zaha_application/tab/abouttab.dart';
 import 'package:zaha_application/tab/hometab.dart';
+import 'package:zaha_application/tab/new_search.dart';
 import 'package:zaha_application/tab/order.dart';
 
 
@@ -16,23 +17,19 @@ class Example extends StatefulWidget {
 
 }
 
-class _ExampleState extends State<Example> {
+class _ExampleState extends State<Example> with TickerProviderStateMixin {
 
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
   TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static  List<Widget> _widgetOptions = <Widget>[
-    //profile(),
 
-    hometab() ,
-    Homee(),
-    order(),
+  TabController _tabController;
 
-
-
-    //favouritetab(),
-
-  ];
+  @override
+  void initState() {
+    _tabController = new TabController(length: 3,vsync: this);
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -40,71 +37,90 @@ class _ExampleState extends State<Example> {
       backgroundColor: Colors.grey,
       drawer: NavDrawer(),
       appBar: AppBar(
-
+        //backgroundColor: Color(0xFF275879),
         backgroundColor: Colors.deepOrange,
 
         title: Text(
           "ZAHA",
         ),
         actions: <Widget>[
-        
+
           IconButton(
             tooltip: "about app",
             icon: Icon(Icons.info),
             onPressed: ()=>Navigator.of(context).push(
-              new MaterialPageRoute(
-                  builder: (BuildContext context) => new abouttab())),
-          ),
-
-          /*IconButton(
-            tooltip: "Search",
-            icon: Icon(Icons.search),
-            onPressed: ()=>Navigator.of(context).push(
                 new MaterialPageRoute(
                     builder: (BuildContext context) => new abouttab())),
-          ),*/
-
-
-
-
-
+          ),
         ],
-      ),
-      body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
-      ),
-      bottomNavigationBar:
 
-            BottomNavigationBar(
-              items: const <BottomNavigationBarItem>[
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.home),
-                  title: Text('الرئيسية',style: TextStyle( fontSize: 16.0
-                    ,      fontFamily: "CustomIcons",),),
-                ),
+        /*bottom: TabBar(
+        unselectedLabelColor: Colors.white,
+        labelColor: Colors.amber,
+        tabs: [
+        new Tab(icon: new Icon(Icons.call)),
+        new Tab(
+        icon: new Icon(Icons.chat),
+        ),
+        new Tab(
+        icon: new Icon(Icons.notifications),
+        )
+        ],
+        controller: _tabController,
 
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.search),
-                  title: Text('بحث',style: TextStyle( fontSize: 16.0
-                    ,      fontFamily: "CustomIcons",),),
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.work),
-                  title: Text('طلبات أعمال',style: TextStyle( fontSize: 16.0
-                    ,      fontFamily: "CustomIcons",),),
-                ),
-              ],
-              currentIndex: _selectedIndex,
-              selectedItemColor: Colors.amber[800],
-              onTap: _onItemTapped,
+          ),*/
+      ),
+      body:  /*TabBarView(
+            children: [
+              new Text("This is call Tab View"),
+              new Text("This is chat Tab View"),
+              new Text("This is notification Tab View"),
+            ],
+            controller: _tabController,),*/
+        Center(
+        child: hometab(),
+      ),
+        bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Color(0xFFffffff),
+          unselectedItemColor: Colors.grey,
+          selectedItemColor: Colors.orange,
+          onTap: onTabTapped, // new
+          currentIndex: 0,
+          type: BottomNavigationBarType.fixed, // new
+          items: [
+            new BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              title: Text('الرئيسية',style: TextStyle( fontSize: 16.0
+                ,      fontFamily: "CustomIcons",),),
             ),
+            new BottomNavigationBarItem(
+              icon: Icon(Icons.search),
+              title: Text('بحث',style: TextStyle( fontSize: 16.0
+                ,      fontFamily: "CustomIcons",),),
+            ),
+            new BottomNavigationBarItem(icon: Icon(Icons.business),
+              title: Text('طلبات أعمال',style: TextStyle( fontSize: 16.0
+                ,      fontFamily: "CustomIcons",),),)
+          ],
+        ),
+
           );
   }
 
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-      print(_selectedIndex.toString());
-    });
+  void onTabTapped(int index) {
+    /*if (index == 0) {
+      Navigator.of(context).push(
+        new MaterialPageRoute(builder: (BuildContext context) => new hometab()),
+      );
+    } else*/ if (index == 2) {
+      Navigator.of(context).push(
+        new MaterialPageRoute(
+            builder: (BuildContext context) => new order()),
+      );
+    } else if (index == 1) {
+      Navigator.of(context).push(
+        new MaterialPageRoute(builder: (BuildContext context) => new new_search()),
+      );
+    }
   }
 }

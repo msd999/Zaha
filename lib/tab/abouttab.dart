@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_open_whatsapp/flutter_open_whatsapp.dart';
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:mailto/mailto.dart';
@@ -65,7 +66,7 @@ class _abouttabState extends State<abouttab> {
 
               BoldText("تطبيقك في البناء و الإكساء ",15.0,korange),
               SizedBox(height: 5),
-              Text('4.0.0',style: TextStyle(color: Colors.white),),
+              Text('4.1.4',style: TextStyle(color: Colors.white),),
               SizedBox(height: 20),
               /*Text('تواصل معنا', style: TextStyle(
                 color: korange,
@@ -80,7 +81,7 @@ class _abouttabState extends State<abouttab> {
                   SizedBox(width: 10.0),
                   InkWell (onTap: launchMailto,
                     child:
-                  Text('info@zaha-app.com',style: TextStyle(
+                  Text('info@zaha.app',style: TextStyle(
                     color:  korange,
                     fontFamily: "CustomIcons",
                     fontSize: 16.0,
@@ -95,11 +96,11 @@ class _abouttabState extends State<abouttab> {
                   SizedBox(height: 30.0,),
                   Icon(Icons.phone,color:Colors.white,),
                   SizedBox(width: 10.0),
-                  FlatButton(child: Text('+963 994942994',style: TextStyle(
+                  FlatButton(child: Text('+963-940665994',style: TextStyle(
                     fontFamily: "CustomIcons",
                   color: Colors.white,
                     fontSize: 16.0,
-                  ),),
+                  ),textDirection: TextDirection.ltr,),
                   onPressed:_initCall,)
                 ],
               ),
@@ -109,18 +110,35 @@ class _abouttabState extends State<abouttab> {
                 children: <Widget>[
                   SizedBox(width: 20.0,),
                   IconButton(
-                    color: korange,
+                    color: Colors.white,
                     icon: Icon(FontAwesomeIcons.facebookF),
                     onPressed: (){
                       _lanchurl("https://www.facebook.com/ZahaSyria");
                     },
                   ),
-                  SizedBox(width: 20.0,),
+                  SizedBox(width: 10.0,),
+                  IconButton(
+                    color: Colors.white,
+                    icon: Icon(FontAwesomeIcons.whatsapp),
+                    onPressed: (){
+                      //_lanchurl("https://www.facebook.com/ZahaSyria");
+                      FlutterOpenWhatsapp.sendSingleMessage("+963940665994", "هل يمكنك مساعدتي");
+                    },
+                  ),
+                  SizedBox(width: 10.0,),
+                  IconButton(
+                    color: Colors.white,
+                    icon: Icon(FontAwesomeIcons.telegram),
+                    onPressed: (){
+                      _lanchurl("https://t.me/zaha_1");
+                    },
+                  ),
+                  SizedBox(width: 10.0,),
                   IconButton(
                     color: Colors.white,
                     icon: Icon(Icons.public),
                     onPressed: (){
-                      _lanchurl("https://www.zaha-app.com");
+                      _lanchurl("https://www.zaha.app");
                     },
                   )
                 ],

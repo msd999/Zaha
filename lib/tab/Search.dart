@@ -72,7 +72,9 @@ class _HomeStatee extends State<Homee> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey,
-      body: SafeArea(
+      body:
+
+       SafeArea(
         child: Directionality( // add this
         textDirection: TextDirection.rtl, // set this property
         child: SearchBar<Post>(
@@ -196,8 +198,10 @@ class _HomeStatee extends State<Homee> {
             );
           },
         ),
+
         ),
       ),
+
     );
   }
 

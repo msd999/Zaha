@@ -11,6 +11,7 @@ class DatabaseHelper {
 
   String serverUrl = "https://zaha-app.com/api/app-api";
   var status;
+  var result_replay;
   String msg;
   var c_favorite_status;
   var fb_status;
@@ -40,6 +41,71 @@ class DatabaseHelper {
     }
   }
 
+  forget_pass_send_pin(String email) async {
+    status = false;
+    msg = "";
+    String myUrl = "$serverUrl/forget_pass_send_pin.php";
+    final response = await http.post(myUrl,
+        body: {
+          "email": "$email",
+        });
+    print(email.toString());
+    print (response.body.toString());
+    var data = json.decode(response.body);
+
+
+
+    if (data["Succes"] == 1) {
+      status = true;
+    } else {
+      status = false;
+      msg = data["message"];
+    }
+  }
+
+  forget_pass_check_pin(String email, String pin) async {
+    status = false;
+    msg = "";
+    String myUrl = "$serverUrl/forget_pass_check_pin.php";
+    final response = await http.post(myUrl,
+        body: {
+          "email": "$email",
+          "pin": "$pin",
+        });
+    print (response.body.toString());
+    var data = json.decode(response.body);
+
+    if (data["Succes"] == 1) {
+      status = true;
+      result_replay = data;
+    } else {
+      status = false;
+      msg = data["message"];
+    }
+  }
+
+  resetPass(String token, String password) async {
+    status = false;
+    msg = "";
+
+    String myUrl = "$serverUrl/reset_password.php";
+    final response = await http.post(myUrl,
+        body: {
+          "token": "$token",
+          "newpass": "$password"
+        });
+    print (response.body.toString());
+
+    var data = json.decode(response.body);
+
+    if (data["Succes"] == 1) {
+      status = true;
+      _save(token,data["name"]);
+    } else {
+      status = false;
+      msg = data["message"];
+    }
+  }
 
   vert(String email,String pincode) async {
     String myUrl = "$serverUrl/vert.php";
@@ -56,7 +122,6 @@ class DatabaseHelper {
       print('data : ${data["Succes"]}');
     } else {
       print('data : ${data["Succes"]}');
-
     }
   }
 
@@ -189,6 +254,7 @@ class DatabaseHelper {
 
     }
   }
+
   send_work_order(String name,String phone, String title, String details) async{
     String myUrl = "https://zaha-app.com/api/app-api/add_order.php";
     final prefs = await SharedPreferences.getInstance();
@@ -433,6 +499,16 @@ class DatabaseHelper {
           'token': '$value'
         });
     print (response.body.toString());
+
+
+    try {
+      var x = json.decode(response.body);
+
+    } on FormatException catch (e) {
+      return null;
+    }
+
+
     return json.decode(response.body);
   }
 

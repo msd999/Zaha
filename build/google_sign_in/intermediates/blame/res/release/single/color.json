@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/sh/Documents/work/zaha/App/Zaha/build/google_sign_in/intermediates/res/merged/release/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/21ef6fa7fa8f755ba618f9f29b17eff9/jetified-play-services-base-16.0.1/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/Users/sh/Documents/work/zaha/App/Zaha/build/google_sign_in/intermediates/res/merged/release/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/21ef6fa7fa8f755ba618f9f29b17eff9/jetified-play-services-base-16.0.1/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/sh/Documents/work/zaha/App/Zaha/build/google_sign_in/intermediates/res/merged/release/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/21ef6fa7fa8f755ba618f9f29b17eff9/jetified-play-services-base-16.0.1/res/color/common_google_signin_btn_text_light.xml"
+    }
+]

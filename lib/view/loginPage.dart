@@ -17,6 +17,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:pin_code_text_field/pin_code_text_field.dart';
 import 'package:email_validator/email_validator.dart';
+import 'package:pinput/pin_put/pin_put.dart';
 
 DatabaseHelper _databaseHelper= new DatabaseHelper();
 
@@ -456,7 +457,7 @@ class _LoginPageState extends State<LoginPage> {
             Text(
               'تكلم مع الدعم الفني',
               style: TextStyle(
-                  color: Color(0xfff79c4f),
+                  color: Color(0xffee601e),
                   fontSize: 13,
                   fontFamily: "CustomIcons",
                   fontWeight: FontWeight.w600),
@@ -509,27 +510,48 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  Widget _title() {
-    return RichText(
-      textAlign: TextAlign.center,
-      text: TextSpan(
-          text: 'Z',
-          style: GoogleFonts.portLligatSans(
-            textStyle: Theme.of(context).textTheme.display1,
-            fontSize: 45,
-            fontWeight: FontWeight.w700,
-            color: Color(0xffe46b10),
-          ),
-          children: [
-            TextSpan(
-              text: 'AH',
-              style: TextStyle(color: Colors.indigo, fontSize: 45),
+  Widget _forget_password() {
+    return InkWell(
+      onTap: () {
+        setState(()  {
+
+          form = 4;
+
+
+        }
+        );
+      },
+      child: Container(
+        margin: EdgeInsets.symmetric(vertical: 10),
+        padding: EdgeInsets.all(5),
+        alignment: Alignment.bottomCenter,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: <Widget>[
+            Text(
+              'هل نسيت كلمة المرور؟',
+              style: TextStyle(
+                  color: Color(0xffee601e),
+                  fontSize: 13,
+                  fontFamily: "CustomIcons",
+                  fontWeight: FontWeight.w600),
             ),
-            TextSpan(
-              text: 'A',
-              style: TextStyle(color: Color(0xffe46b10), fontSize: 45),
-            ),
-          ]),
+
+
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _title(String title) {
+    return Text(
+      title,
+      style: TextStyle(
+          color: Colors.white,
+          fontSize: 20,
+          fontFamily: "CustomIcons",
+          fontWeight: FontWeight.w600),
     );
   }
 
@@ -609,8 +631,8 @@ class _LoginPageState extends State<LoginPage> {
                   _facebookButton(),
                   SizedBox(height: 20),
                   android_or_ios(),
-                  SizedBox(height: 20),
-                  _gust(),
+                  /*SizedBox(height: 20),
+                  _gust(),*/
                   SizedBox(height: height * .055),
                   _createAccountLabel(),
                 ],
@@ -645,9 +667,6 @@ class _LoginPageState extends State<LoginPage> {
         }
       });
   }
-
-
-
   ///////////////////sign in form start/////////////////////
 
   final TextEditingController _emailController = new TextEditingController();
@@ -666,6 +685,16 @@ class _LoginPageState extends State<LoginPage> {
               textDirection: TextDirection.rtl,
               textAlign: TextAlign.right,
               decoration: InputDecoration(
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+                border: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+
                     hintText: "الايميل",
 
                   hintStyle: TextStyle(fontSize: 14.0, color: Colors.white,fontFamily: "CustomIcons"),
@@ -674,9 +703,11 @@ class _LoginPageState extends State<LoginPage> {
                     Icons.email,
                     color: Colors.white,
                   ),
-                  border: InputBorder.none,
-                  fillColor: Color(0xff51637b),
-                  filled: true))
+                  //border: InputBorder.none,
+
+                  //fillColor: Color(0xff51637b),
+                  //filled: true
+              ))
         ],
       ),
     );
@@ -706,9 +737,19 @@ class _LoginPageState extends State<LoginPage> {
                     Icons.security,
                     color: Colors.white,
                   ),
-                  border: InputBorder.none,
-                  fillColor: Color(0xff51637b),
-                  filled: true))
+                  //border: InputBorder.none,
+                  //fillColor: Color(0xff51637b),
+                  //filled: true
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+                border: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+              ))
         ],
       ),
     );
@@ -731,7 +772,7 @@ class _LoginPageState extends State<LoginPage> {
           gradient: LinearGradient(
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
-              colors: [Color(0xfffbb448), Color(0xfff7892b)])),
+              colors: [Color(0xffea7a46), Color(0xffee601e)])),
       child: login_button_child(),
     ),
     );
@@ -795,11 +836,11 @@ class _LoginPageState extends State<LoginPage> {
         child: Row(
           children: <Widget>[
             Container(
-              padding: EdgeInsets.only(right: 0, top: 0, bottom: 10),
+              padding: EdgeInsets.only(right: 0, top: 0, bottom: 15),
               child: Icon(Icons.keyboard_arrow_left, color: Colors.white),
             ),
-            Text('عودة',
-                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500,color: Colors.white))
+            /*Text('عودة',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500,color: Colors.white,fontFamily: "CustomIcons",))*/
           ],
         ),
       ),
@@ -810,10 +851,23 @@ class _LoginPageState extends State<LoginPage> {
     return Column(
       children: <Widget>[
         _backButton(),
-        _emailField("Email id"),
-        _passwordField("Password",),
+        _title('تسجيل الدخول'),
+        SizedBox(height: 5),
+    Container(
+      padding: const EdgeInsets.all(10),
+      color: Color(0xFF2b3648),
+      child:
+      Column(
+        children: [
+
+          _emailField("Email id"),
+          _passwordField("Password",),
+      ],),
+    ),
+
         SizedBox(height: 15),
         _submitButton(),
+        _forget_password(),
         /*SizedBox(height: 10,),
         InkWell(onTap: (){},child: Text('هل نسيت كلمة المرور؟',
     style: TextStyle(
@@ -824,6 +878,347 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   ///////////////////sign in form end///////////////////////
+
+  ///////////////////forget password form start/////////////////////
+
+  Widget _forget_Button() {
+    return InkWell(onTap:(){forget_btn_tap(); } , child: Container(
+      width: MediaQuery.of(context).size.width,
+      padding: EdgeInsets.symmetric(vertical: 15),
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(5)),
+          /*boxShadow: <BoxShadow>[
+            BoxShadow(
+                color: Colors.grey.shade200,
+                offset: Offset(2, 4),
+                blurRadius: 5,
+                spreadRadius: 2)
+          ],*/
+          gradient: LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              colors: [Color(0xfffbb448), Color(0xfff7892b)])),
+      child: forget_button_child(),
+    ),
+    );
+  }
+
+  int forget_btn_child_index = 0;
+  forget_button_child(){
+    if (forget_btn_child_index == 0){
+      return Text(
+        'أستعادة كلمة المرور',
+        style: TextStyle(fontSize: 20, color: Colors.white,fontFamily: "CustomIcons"),
+      );
+    } else{
+      return CircularProgressIndicator(
+        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+      );
+    }
+  }
+
+  forget_btn_tap(){
+    if(forget_btn_child_index == 0){
+      setState(() {
+        forget_btn_child_index = 1;
+      });
+      if(EmailValidator.validate(_emailController.text.trim()) == false){
+        alert_dialog('يرجى كتابة الإيميل بشكل صحيح',1,'بيانات ناقصة');
+        setState(() {
+          forget_btn_child_index = 0;
+        });
+      }else{
+        _databaseHelper.forget_pass_send_pin(_emailController.text.trim().toLowerCase(),).whenComplete(() {
+          if (_databaseHelper.status) {
+            setState(() {
+              form = 5;
+              forget_btn_child_index = 0;
+            });
+          } else {
+            alert_dialog(_databaseHelper.msg,1,'');
+            setState(() {
+              forget_btn_child_index = 0;
+            });
+
+          }
+        });
+      }
+    }
+  }
+
+  Widget forget_form(){
+    return Column(
+      children: <Widget>[
+        _backButton(),
+        _title('استعادة كلمة المرور'),
+        _emailField("Email id"),
+        SizedBox(height: 15),
+        _forget_Button(),
+        /*SizedBox(height: 10,),
+        InkWell(onTap: (){},child: Text('هل نسيت كلمة المرور؟',
+    style: TextStyle(
+    fontSize: 16, fontWeight: FontWeight.w500,color: Colors.orange,fontFamily: "CustomIcons")),
+    ),*/
+      ],
+    );
+  }
+
+  ///////////////////forget password form end///////////////////////
+
+
+
+  ///////////////////forget password pin form start/////////////////////
+
+  Widget _forget_pin_Button() {
+    return InkWell(onTap:(){forget_pin_btn_tap(); } , child: Container(
+      width: MediaQuery.of(context).size.width,
+      padding: EdgeInsets.symmetric(vertical: 15),
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(5)),
+          /*boxShadow: <BoxShadow>[
+            BoxShadow(
+                color: Colors.grey.shade200,
+                offset: Offset(2, 4),
+                blurRadius: 5,
+                spreadRadius: 2)
+          ],*/
+          gradient: LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              colors: [Color(0xfffbb448), Color(0xfff7892b)])),
+      child: forget_pin_button_child(),
+    ),
+    );
+  }
+
+  int forget_pin_btn_child_index = 0;
+  forget_pin_button_child(){
+    if (forget_pin_btn_child_index == 0){
+      return Text(
+        'متابعة',
+        style: TextStyle(fontSize: 20, color: Colors.white,fontFamily: "CustomIcons"),
+      );
+    } else{
+      return CircularProgressIndicator(
+        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+      );
+    }
+  }
+
+  forget_pin_btn_tap(){
+    if(forget_pin_btn_child_index == 0){
+      setState(() {
+        forget_pin_btn_child_index = 1;
+      });
+      if(_pinPutController.text.isEmpty || _pinPutController.text.length <4){
+        alert_dialog('يرجى كتابة رمز التحقق',1,'بيانات ناقصة');
+        setState(() {
+          forget_pin_btn_child_index = 0;
+        });
+      }else{
+        _databaseHelper.forget_pass_check_pin(_emailController.text.trim(),
+            _pinPutController.text.trim()).whenComplete(() {
+          if (_databaseHelper.status) {
+
+            setState(() {
+              form = 6;
+            });
+          } else {
+            alert_dialog(_databaseHelper.msg,1,'رسالة خطأ');
+            setState(() {
+              forget_pin_btn_child_index = 0;
+            });
+          }
+        });
+      }
+    }
+  }
+
+  Widget forget_pin_form(){
+    return Column(
+      children: <Widget>[
+        _backButton(),
+        Text('''أدخل كود التحقق الذي أرسلناه إلى ايميلك ${_emailController.text}''',
+          style: TextStyle(color: Colors.white,fontSize: 18,fontFamily: "CustomIcons"),
+          textDirection: TextDirection.rtl,textAlign: TextAlign.center,),
+        SizedBox(height: 25),
+        PinField(),
+        SizedBox(height: 15),
+        _forget_pin_Button(),
+        /*SizedBox(height: 10,),
+        InkWell(onTap: (){},child: Text('هل نسيت كلمة المرور؟',
+    style: TextStyle(
+    fontSize: 16, fontWeight: FontWeight.w500,color: Colors.orange,fontFamily: "CustomIcons")),
+    ),*/
+      ],
+    );
+  }
+
+  ///////////////////forget password pin form end///////////////////////
+
+  ///////////////////reset password form start///////////////////////
+
+  final TextEditingController _resetpass1Controller = new TextEditingController();
+  final TextEditingController _resetpass2Controller = new TextEditingController();
+
+  Widget _pass1Field() {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 10),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          TextField(
+              keyboardType: TextInputType.emailAddress,
+              controller: _resetpass1Controller,
+              style: TextStyle(color: Colors.white,fontSize: 16,fontFamily: "CustomIcons"),
+              textDirection: TextDirection.rtl,
+              textAlign: TextAlign.right,
+              decoration: InputDecoration(
+                  hintText: "كلمة المرور الجديدة",
+
+                  hintStyle: TextStyle(fontSize: 14.0, color: Colors.white,fontFamily: "CustomIcons"),
+
+                  prefixIcon: const Icon(
+                    Icons.security,
+                    color: Colors.white,
+                  ),
+                  border: InputBorder.none,
+                  fillColor: Color(0xff51637b),
+                  filled: true))
+        ],
+      ),
+    );
+  }
+
+  Widget _pass2Field() {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 10),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget>[
+
+          TextField(
+              controller: _resetpass2Controller,
+              style: TextStyle(color: Colors.white,fontSize: 16,fontFamily: "CustomIcons"),
+              //obscureText: true,
+              textDirection: TextDirection.rtl,
+              textAlign: TextAlign.right,
+
+              decoration: InputDecoration(
+
+                  hintText: "تأكيد كلمة المرور الجديدة",
+
+                  hintStyle: TextStyle(fontSize: 14.0, color: Colors.white,fontFamily: "CustomIcons"),
+
+                  prefixIcon: const Icon(
+                    Icons.security,
+                    color: Colors.white,
+                  ),
+                  border: InputBorder.none,
+                  fillColor: Color(0xff51637b),
+                  filled: true))
+        ],
+      ),
+    );
+  }
+
+  Widget _resetpass_Button() {
+    return InkWell(onTap:(){resetpass_btn_tap(); } , child: Container(
+      width: MediaQuery.of(context).size.width,
+      padding: EdgeInsets.symmetric(vertical: 15),
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(5)),
+          /*boxShadow: <BoxShadow>[
+            BoxShadow(
+                color: Colors.grey.shade200,
+                offset: Offset(2, 4),
+                blurRadius: 5,
+                spreadRadius: 2)
+          ],*/
+          gradient: LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              colors: [Color(0xfffbb448), Color(0xfff7892b)])),
+      child: resetpass_button_child(),
+    ),
+    );
+  }
+
+  int resetpass_btn_child_index = 0;
+  resetpass_button_child(){
+    if (resetpass_btn_child_index == 0){
+      return Text(
+        'تعديل كلمة المرور',
+        style: TextStyle(fontSize: 20, color: Colors.white,fontFamily: "CustomIcons"),
+      );
+    } else{
+      return CircularProgressIndicator(
+        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+      );
+    }
+  }
+
+  resetpass_btn_tap(){
+
+      setState(() {
+        resetpass_btn_child_index = 1;
+      });
+      if(_resetpass1Controller.text.length < 8){
+        alert_dialog('كلمة المرور قصيرة جداً يجب أن تتكون من ثمانية محارف على الأقل',1,'');
+        setState(() {
+          resetpass_btn_child_index = 0;
+        });
+      }else if(_resetpass1Controller.text != _resetpass2Controller.text) {
+        alert_dialog('تأكد من تطابق كلمتي المرور المدخلتين',1,'');
+        setState(() {
+          resetpass_btn_child_index = 0;
+        });
+      }else{
+          _databaseHelper.resetPass(_databaseHelper.result_replay["token"],_resetpass1Controller.text,).whenComplete(() {
+            if (_databaseHelper.status) {
+              setState(() {
+                forget_btn_child_index = 0;
+              });
+              Navigator.pushReplacementNamed(context, '/GroceryHomePage');
+            } else {
+              alert_dialog(_databaseHelper.msg,1,'');
+              setState(() {
+                forget_btn_child_index = 0;
+              });
+
+            }
+          });
+        }
+
+    }
+
+
+  Widget resetpass_form(){
+    return Column(
+      children: <Widget>[
+        _backButton(),
+        _title('تغيير كلمة المرور'),
+        Text('أدخل كلمة المرور الجديدة',
+          style: TextStyle(color: Colors.white,fontSize: 16,fontFamily: "CustomIcons"),
+          textDirection: TextDirection.rtl,textAlign: TextAlign.center,),
+        _pass1Field(),
+        SizedBox(height: 15),
+        _pass2Field(),
+        SizedBox(height: 15),
+        _resetpass_Button(),
+        /*SizedBox(height: 10,),
+        InkWell(onTap: (){},child: Text('هل نسيت كلمة المرور؟',
+    style: TextStyle(
+    fontSize: 16, fontWeight: FontWeight.w500,color: Colors.orange,fontFamily: "CustomIcons")),
+    ),*/
+      ],
+    );
+  }
+
+  ///////////////////reset password form end/////////////////////////
 
   //////////////////signup form start///////////////////////
   final TextEditingController _nameController = new TextEditingController();
@@ -849,9 +1244,17 @@ class _LoginPageState extends State<LoginPage> {
                     Icons.person,
                     color: Colors.white,
                   ),
-                  border: InputBorder.none,
-                  fillColor: Color(0xff51637b),
-                  filled: true))
+                  //border: InputBorder.none,
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+                border: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+              ))
         ],
       ),
     );
@@ -878,9 +1281,61 @@ class _LoginPageState extends State<LoginPage> {
                     Icons.phone,
                     color: Colors.white,
                   ),
-                  border: InputBorder.none,
-                  fillColor: Color(0xff51637b),
-                  filled: true))
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+                border: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+              ))
+        ],
+      ),
+    );
+  }
+  Widget _ConfirmPasswordField(String title) {
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: 10),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: <Widget>[
+
+          TextField(
+              controller: _passwordController,
+              style: TextStyle(color: Colors.white,fontSize: 16,fontFamily: "CustomIcons"),
+              obscureText: true,
+              textDirection: TextDirection.rtl,
+              textAlign: TextAlign.right,
+
+              decoration: InputDecoration(
+
+                hintText: "تأكيد كلمة المرور",
+
+                hintStyle: TextStyle(fontSize: 14.0, color: Colors.white,fontFamily: "CustomIcons"),
+
+                prefixIcon: const Icon(
+                  Icons.security,
+                  color: Colors.white,
+                ),
+                suffixIcon: const Icon(
+                  Icons.remove_red_eye,
+                  color: Colors.white,
+                ),
+                //border: InputBorder.none,
+                //fillColor: Color(0xff51637b),
+                //filled: true
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+                border: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+              ))
         ],
       ),
     );
@@ -903,7 +1358,7 @@ class _LoginPageState extends State<LoginPage> {
           gradient: LinearGradient(
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
-              colors: [Color(0xfffbb448), Color(0xfff7892b)])),
+              colors: [Color(0xffea7a46), Color(0xffee601e)])),
       child: signup_button_child(),
     ),
     );
@@ -975,10 +1430,22 @@ class _LoginPageState extends State<LoginPage> {
     return Column(
       children: <Widget>[
         _backButton(),
-        _nameField("Email id"),
-        _phoneField("Email id"),
-        _emailField("Email id"),
-        _passwordField("Password",),
+        _title('تسجيل حساب جديد'),
+        Container(
+          padding: const EdgeInsets.all(10),
+          color: Color(0xFF2b3648),
+          child:
+          Column(
+            children: [
+
+              _nameField("Email id"),
+              _phoneField("Email id"),
+              _emailField("Email id"),
+              _passwordField("Password",),
+              _ConfirmPasswordField("Confirm Password",),
+            ],),
+        ),
+
         SizedBox(height: 15),
         _submit_signup_Button(),
 
@@ -988,16 +1455,40 @@ class _LoginPageState extends State<LoginPage> {
   //////////////////signup form end/////////////////////////
 
   ////////////////// pin form start/////////////////////////
-  final TextEditingController _pinController = new TextEditingController();
+  final TextEditingController _pinPutController = TextEditingController();
+  final FocusNode _pinPutFocusNode = FocusNode();
+
+  BoxDecoration get _pinPutDecoration {
+    return BoxDecoration(
+      color: Colors.white,
+      border: Border.all(color: Colors.white),
+      borderRadius: BorderRadius.circular(10.0),
+    );
+  }
+
   Widget PinField(){
-    return PinCodeTextField(
-      controller: _pinController,
-      highlight: true,
-      highlightColor: Colors.orange,
-      defaultBorderColor: Colors.white,
-      hasTextBorderColor: Colors.white,
-      pinTextStyle: TextStyle(fontSize: 18.0,color: Colors.white),
-      keyboardType: TextInputType.number,
+    return Container(
+      margin: const EdgeInsets.all(5.0),
+      padding: const EdgeInsets.all(5.0),
+      child: PinPut(
+
+        textStyle: const TextStyle(fontSize: 20.0, color: Colors.black),
+        pinAnimationType: PinAnimationType.scale,
+        fieldsCount: 4,
+        //onSubmit: (String pin) => _showSnackBar(pin, context),
+        focusNode: _pinPutFocusNode,
+        controller: _pinPutController,
+        submittedFieldDecoration: _pinPutDecoration.copyWith(
+          borderRadius: BorderRadius.circular(10.0),
+        ),
+        selectedFieldDecoration: _pinPutDecoration,
+        followingFieldDecoration: _pinPutDecoration.copyWith(
+          borderRadius: BorderRadius.circular(10.0),
+          border: Border.all(
+            color: Colors.white.withOpacity(.5),
+          ),
+        ),
+      ),
     );
   }
 
@@ -1028,7 +1519,7 @@ class _LoginPageState extends State<LoginPage> {
   pin_button_child(){
     if (pin_btn_child_index == 0){
       return Text(
-        'تحقق',
+        'متابعة',
         style: TextStyle(fontSize: 20, color: Colors.white,fontFamily: "CustomIcons"),
       );
     } else{
@@ -1039,18 +1530,19 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   pin_btn_tap(){
+    //alert_dialog(_pinPutController.text,1,'بيانات ناقصة');
     if(pin_btn_child_index == 0){
       setState(() {
         pin_btn_child_index = 1;
       });
-       if(_pinController.text.isEmpty || _pinController.text.length <4){
+       if(_pinPutController.text.isEmpty || _pinPutController.text.length <4){
         alert_dialog('يرجى كتابة رمز التحقق',1,'بيانات ناقصة');
         setState(() {
           pin_btn_child_index = 0;
         });
       }else{
          _databaseHelper.vert(_emailController.text.trim(),
-             _pinController.text.trim()).whenComplete(() {
+             _pinPutController.text.trim()).whenComplete(() {
           if (_databaseHelper.status) {
             alert_dialog('رمز التحقق خاطئ.',1,'رسالة خطأ');
             setState(() {
@@ -1067,6 +1559,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget pin_form(){
     return Column(
       children: <Widget>[
+        _backButton(),
         Text('''أدخل كود التحقق الذي أرسلناه إلى ايميلك ${_emailController.text}''',
           style: TextStyle(color: Colors.white,fontSize: 18,fontFamily: "CustomIcons"),
         textDirection: TextDirection.rtl,textAlign: TextAlign.center,),
@@ -1100,7 +1593,7 @@ class _LoginPageState extends State<LoginPage> {
           gradient: LinearGradient(
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
-              colors: [Color(0xfffbb448), Color(0xfff7892b)])),
+              colors: [Color(0xffea7a46), Color(0xffee601e)])),
       child: Text(
         text,
 
@@ -1163,6 +1656,15 @@ class _LoginPageState extends State<LoginPage> {
       return singup_form();
     }else if(form == 3){
       return pin_form();
+    }else if(form == 4){
+      return forget_form();
+    }else if(form == 5){
+      setState(() {
+        _nameController.text = "";
+      });
+      return forget_pin_form();
+    }else if(form == 6){
+      return resetpass_form();
     }
   }
 }

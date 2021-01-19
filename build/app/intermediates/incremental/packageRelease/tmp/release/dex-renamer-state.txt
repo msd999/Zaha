@@ -1,0 +1,4 @@
+#Sun Jan 10 03:33:08 EET 2021
+base.0=/Users/sh/Documents/work/zaha/App/Zaha/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

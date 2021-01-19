@@ -8,9 +8,8 @@ import 'package:giffy_dialog/giffy_dialog.dart';
 import 'package:zaha_application/controler/databasehelper.dart';
 import 'package:zaha_application/pnetwork.dart';
 import 'package:zaha_application/style/consts.dart';
-
+import 'package:zaha_application/view/companydetail.dart';
 import 'package:zaha_application/view/showcompany.dart';
-
 import 'package:zaha_application/view/banercompany.dart';
 
 DatabaseHelper databaseHelper= new DatabaseHelper();
@@ -49,7 +48,7 @@ class homestate extends State<hometab>{
           ]
       ),
 
-floatingActionButton:FloatingActionButton(child:Icon(Icons.live_help),backgroundColor: korange, onPressed:_alertDialog),
+      floatingActionButton:FloatingActionButton(child:Icon(Icons.live_help),backgroundColor: korange, onPressed:_alertDialog),
     );
   }
   _alertDialog() {
@@ -76,7 +75,7 @@ floatingActionButton:FloatingActionButton(child:Icon(Icons.live_help),background
   }
 
   get_banner(){
-    if(Platform.isIOS){                                                      //check for ios if developing for both android & ios
+    /*if(Platform.isIOS){                                                      //check for ios if developing for both android & ios
       return Expanded(child:
       FutureBuilder<List>(
         future: databaseHelper.apple_ads(),
@@ -87,7 +86,7 @@ floatingActionButton:FloatingActionButton(child:Icon(Icons.live_help),background
               : new Center(child: new CircularProgressIndicator(),);
         },
       ),flex: 2,);
-    }else{
+    }else{*/
       return Expanded(child:
       FutureBuilder<List>(
         future: databaseHelper.ads(),
@@ -98,7 +97,7 @@ floatingActionButton:FloatingActionButton(child:Icon(Icons.live_help),background
               : new Center(child: new CircularProgressIndicator(),);
         },
       ),flex: 2,);
-    }
+    //}
   }
 
 }
@@ -225,8 +224,21 @@ class bannerr extends StatelessWidget {
       outer: false,
       itemBuilder: (context, i) {
         String bike='https://zaha-app.com/dash/logo/${list[i]['photo']}';
+        //print(bike);
         return GestureDetector(
-            onTap: (){},child:ClipRRect(
+            onTap: (){
+              print(list[i].toString());
+              if(list[i]['comid'] != "258"){
+                Navigator.of(context).push(
+
+                  new MaterialPageRoute(
+                      builder: (BuildContext context) => new CompanyDetailPagee(id:list[i]['cid'] , logo:list[i]['logo'],
+                        name: list[i]['cname'],typoe: list[i]['typoe'],adress: list[i]['adress'],phone: list[i]['phone'],
+                        email: list[i]['email'],whatsup: list[i]['whatsup'],details: list[i]['details'],mobilephone: list[i]['mobilephone'],) ),
+                );
+              }
+
+            },child:ClipRRect(
           borderRadius: BorderRadius.circular(10.0),
           child:Image(
 

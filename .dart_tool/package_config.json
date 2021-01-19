@@ -122,6 +122,12 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "dio",
+      "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/dio-3.0.10",
+      "packageUri": "lib/",
+      "languageVersion": "2.4"
+    },
+    {
       "name": "disposables",
       "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/disposables-0.1.2",
       "packageUri": "lib/",
@@ -238,6 +244,12 @@
     {
       "name": "flutter_facebook_login",
       "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_facebook_login-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "flutter_image_compress",
+      "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_image_compress-0.7.0",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
@@ -423,7 +435,7 @@
     },
     {
       "name": "path_provider",
-      "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.24",
+      "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.27",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
@@ -474,6 +486,12 @@
       "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/pin_code_text_field-1.7.1",
       "packageUri": "lib/",
       "languageVersion": "2.0"
+    },
+    {
+      "name": "pinput",
+      "rootUri": "file:///Users/sh/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/pinput-0.2.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.8"
     },
     {
       "name": "platform",
@@ -698,7 +716,7 @@
       "languageVersion": "2.2"
     }
   ],
-  "generated": "2020-12-02T18:03:13.328453Z",
+  "generated": "2021-01-16T11:53:43.801796Z",
   "generator": "pub",
-  "generatorVersion": "2.10.3"
+  "generatorVersion": "2.10.4"
 }

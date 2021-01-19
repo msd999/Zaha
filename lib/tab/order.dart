@@ -2,15 +2,21 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_open_whatsapp/flutter_open_whatsapp.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:zaha_application/Widget/NavDrawer.dart';
 import 'package:zaha_application/controler/databasehelper.dart';
 import 'package:zaha_application/pnetwork.dart';
 import 'package:zaha_application/style/consts.dart';
 import 'package:zaha_application/view/addorder.dart';
 import 'package:zaha_application/view/myOrders.dart';
+import 'package:zaha_application/view/newhome.dart';
 
 import 'package:zaha_application/view/showcompany.dart';
 
 import 'package:zaha_application/view/banercompany.dart';
+
+import 'abouttab.dart';
+import 'hometab.dart';
+import 'new_search.dart';
 
 DatabaseHelper databaseHelper= new DatabaseHelper();
 class order extends StatefulWidget{
@@ -26,9 +32,40 @@ class orderstate extends State<order>{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Scaffold(
-      backgroundColor: const Color(0xff222838),
+    return  Scaffold(
+      backgroundColor: Color(0xFF31394d),
+      drawer: NavDrawer(),
+      appBar: AppBar(
 
+        backgroundColor: Colors.deepOrange,
+
+        title: Text(
+          "ZAHA",
+        ),
+        actions: <Widget>[
+
+          IconButton(
+            tooltip: "about app",
+            icon: Icon(Icons.info),
+            onPressed: ()=>Navigator.of(context).push(
+                new MaterialPageRoute(
+                    builder: (BuildContext context) => new abouttab())),
+          ),
+
+          /*IconButton(
+            tooltip: "Search",
+            icon: Icon(Icons.search),
+            onPressed: ()=>Navigator.of(context).push(
+                new MaterialPageRoute(
+                    builder: (BuildContext context) => new abouttab())),
+          ),*/
+
+
+
+
+
+        ],
+      ),
       body: Column(
           children: <Widget>[
       Row( mainAxisAlignment: MainAxisAlignment.center, children:  <Widget>[
@@ -106,9 +143,48 @@ class orderstate extends State<order>{
               flex:4 ,)
           ]
       ),
-
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color(0xFFffffff),
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: Colors.orange,
+        onTap: onTabTapped, // new
+        currentIndex: 2,
+        type: BottomNavigationBarType.fixed, // new
+        items: [
+          new BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title: Text('الرئيسية',style: TextStyle( fontSize: 16.0
+              ,      fontFamily: "CustomIcons",),),
+          ),
+          new BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            title: Text('بحث',style: TextStyle( fontSize: 16.0
+              ,      fontFamily: "CustomIcons",),),
+          ),
+          new BottomNavigationBarItem(icon: Icon(Icons.business),
+            title: Text('طلبات أعمال',style: TextStyle( fontSize: 16.0
+              ,      fontFamily: "CustomIcons",),),)
+        ],
+      ),
 
     );
+  }
+
+  void onTabTapped(int index) {
+    if (index == 0) {
+      Navigator.of(context).push(
+        new MaterialPageRoute(builder: (BuildContext context) => new Example()),
+      );
+    } /*else if (index == 2) {
+      Navigator.of(context).push(
+        new MaterialPageRoute(
+            builder: (BuildContext context) => new order()),
+      );
+    } */else if (index == 1) {
+      Navigator.of(context).push(
+        new MaterialPageRoute(builder: (BuildContext context) => new new_search()),
+      );
+    }
   }
 }
 

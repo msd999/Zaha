@@ -1,13 +1,16 @@
 import 'dart:convert';
 
+import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_absolute_path/flutter_absolute_path.dart';
+import 'package:flutter_image_compress/flutter_image_compress.dart';
 import 'package:giffy_dialog/giffy_dialog.dart';
 import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:http_parser/http_parser.dart';
 import 'package:multi_image_picker/multi_image_picker.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:picker/picker.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -787,7 +790,8 @@ class Add_companyState extends State<Add_company> {
   }
 
   send_order() async {
-    if (lsubmit_btn_child_index == 0) {
+    //if (lsubmit_btn_child_index == 0) {
+    if (true) {
       setState(() {
         lsubmit_btn_child_index = 1;
       });
@@ -818,6 +822,16 @@ class Add_companyState extends State<Add_company> {
         setState(() {
           lsubmit_btn_child_index = 0;
         });        return;
+      }else if (_mycountrySelection == "" || _mycountrySelection == null) {
+        _showDialog("يرجى اختيار الدولة.");
+        setState(() {
+          lsubmit_btn_child_index = 0;
+        });        return;
+      }else if (_mycitySelection == "" || _mycitySelection == null) {
+        _showDialog("يرجى اختيار المدينة.");
+        setState(() {
+          lsubmit_btn_child_index = 0;
+        });        return;
       }else if (phonesController.text == "" || phonesController.text == null) {
         _showDialog("يرجى إدخال أرقام التواصل.");
         setState(() {
@@ -837,7 +851,15 @@ class Add_companyState extends State<Add_company> {
           });        return;
 
 
-      } else {
+      } else if (images == null || images.length < 3) {
+
+        _showDialog("يرجى اختيار ثلاث صور خدمات على الأقل");
+        setState(() {
+          lsubmit_btn_child_index = 0;
+        });        return;
+
+
+      }else {
 
         ////////get user parameter///////
         final prefs = await SharedPreferences.getInstance();
@@ -862,11 +884,21 @@ class Add_companyState extends State<Add_company> {
         postBody.putIfAbsent('details', () => '${com_aboutController.text}');
         postBody.putIfAbsent('cat_id', () => '${_mySelection}');
         postBody.putIfAbsent('cname', () => '${com_nameController.text}');
+        postBody.putIfAbsent('country', () => '${_mycountrySelection}');
+        postBody.putIfAbsent('city', () => '${_mycitySelection}');
 
+        Directory tempDir = await getTemporaryDirectory();
+        String tempPath = tempDir.path;
 
         var path = await FlutterAbsolutePath.getAbsolutePath(logo_image[0].identifier);
+        String filename = path.split('/').last;
+        print(path.toString());
+        print(tempPath+filename+".jpg");
         File service_image = new File(path);
-        base64Image = base64Encode(service_image.readAsBytesSync());
+        print (await service_image.length().toString() + "befor");
+        File comp_file = await testCompressAndGetFile(service_image,tempPath+filename+".jpg");
+        print (await comp_file.length().toString() + "after");
+        base64Image = base64Encode(comp_file.readAsBytesSync());
         postBody.putIfAbsent('image', () => '${base64Image}');
 
 
@@ -875,11 +907,19 @@ class Add_companyState extends State<Add_company> {
           var path = await FlutterAbsolutePath.getAbsolutePath(images[i].identifier);
 
           File service_image = new File(path);
-          base64Image = base64Encode(service_image.readAsBytesSync());
+          print (await service_image.length().toString() + "befor");
+
+          String filename = path.split('/').last;
+          String tempPath = tempDir.path;
+          print(path.toString());
+          print(tempPath+filename);
+          File comp_file = await testCompressAndGetFile(service_image,tempPath+filename+".jpg");
+          print (await comp_file.length().toString() + "after");
+          base64Image = base64Encode(comp_file.readAsBytesSync());
           postBody.putIfAbsent('imgs_file $i', () => '${base64Image}');
 
-          /*request.files.add(await http.MultipartFile.fromPath('imgs_file$i', path,
-              contentType: new MediaType('application', 'x-tar')));*/
+          request.files.add(await http.MultipartFile.fromPath('imgs_file$i', path,
+              contentType: new MediaType('application', 'x-tar')));
 
           //final file = File(path);
         }
@@ -901,27 +941,40 @@ class Add_companyState extends State<Add_company> {
         } else {
           _showDialog("حدث خطأ! يرجى المحاولة لاحقاً.");
         }
-        print("Result: ${response2.statusCode}");
-        print("Result: ${response2.body}");
+
+
+        /*var dio = Dio();
+        Response response;
+        try {
+          response = await dio.post(
+            //"/upload",
+            "https://zaha-app.com/api/app-api/add_company2.php",
+            data: await FormData_(),
+            options: Options(contentType: 'multipart/form-data',
+                responseType: ResponseType.json),
+            onSendProgress: (received, total) {
+              if (total != -1) {
+                print((received / total * 100).toStringAsFixed(0) + "%");
+              }
+            },
+          );
+        }on DioError catch (e) {
+          if(e.response.statusCode == 401){
+            print(e.response.statusCode);
+            //print(response);
+
+          }else{
+            print(e.message);
+            print(e.request);
+          }
+        }*/
+
+
+
 
         setState(() {
           lsubmit_btn_child_index = 0;
         });
-
-        //startUpload(_image);
-        /*setState(() {
-          lsubmit_btn_child_index = 0;
-        }); */       /*databaseHelper.send_work_order(com_nameController.text,man_nameController.text,categoryController.text,addressController.text);
-      if (databaseHelper.send_order_status == true){
-        _showDialog(databaseHelper.msg);
-      }else{
-        alert_dialog('تم إضافة طلبك بنجاح، سيتم نشره بعد المراجعة.',1,'تم بنجاح');
-        com_nameController.text = "";
-        man_nameController.text = "";
-        categoryController.text = "";
-        addressController.text = "";
-
-      }*/
 
 
       }
@@ -929,6 +982,64 @@ class Add_companyState extends State<Add_company> {
 
 
 
+  }
+
+  // 2. compress file and get file.
+  Future<File> testCompressAndGetFile(File file, String targetPath) async {
+    var result = await FlutterImageCompress.compressAndGetFile(
+      file.absolute.path, targetPath,
+      quality: 80,
+      rotate: 0,
+    );
+
+    print(file.lengthSync());
+    print(result.lengthSync());
+
+    return result;
+  }
+
+  Future<FormData> FormData_() async {
+
+    final prefs = await SharedPreferences.getInstance();
+    final key = 'token';
+    final value = prefs.get(key) ?? 0;
+
+    var path = await FlutterAbsolutePath.getAbsolutePath(logo_image[0].identifier);
+    File service_image = new File(path);
+    base64Image = base64Encode(service_image.readAsBytesSync());
+
+
+    var formData = FormData();
+
+    //add parameter
+    formData.fields
+      ..add(MapEntry("token", value.toString()))
+      ..add(MapEntry("manager", '${man_nameController.text}'))
+      ..add(MapEntry("whatsapp", '${whatsappController.text}'))
+      ..add(MapEntry("address", '${addressController.text}'))
+      ..add(MapEntry("email", '${emailController.text}'))
+      ..add(MapEntry("phone", '${phonesController.text}'))
+      ..add(MapEntry("details", '${com_aboutController.text}'))
+      ..add(MapEntry("cat_id", '${_mySelection}'))
+      ..add(MapEntry("cname", '${com_nameController.text}'))
+      ..add(MapEntry("country", '${_mycountrySelection}'))
+      ..add(MapEntry("image", '${base64Image}'))
+      ..add(MapEntry("city", '${_mycitySelection}'));
+
+    //add files
+    for (var i = 0; i < images.length; i++) {
+      var path = await FlutterAbsolutePath.getAbsolutePath(images[i].identifier);
+
+      File service_image = new File(path);
+      base64Image = base64Encode(service_image.readAsBytesSync());
+
+      formData.fields
+        ..add(MapEntry('imgs_file $i', '${base64Image}'));
+
+    }
+
+
+    return formData;
   }
 
 
