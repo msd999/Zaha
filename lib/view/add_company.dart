@@ -992,6 +992,8 @@ class Add_companyState extends State<Add_company> {
       rotate: 0,
     );
 
+    
+
     print(file.lengthSync());
     print(result.lengthSync());
 
