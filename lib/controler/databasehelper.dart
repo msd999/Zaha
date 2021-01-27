@@ -5,6 +5,8 @@ import 'package:async/async.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:zaha_application/modules/Tip.dart';
+import 'package:zaha_application/modules/TipCard.dart';
 import 'package:zaha_application/view/login.dart';
 
 class DatabaseHelper {
@@ -20,6 +22,9 @@ class DatabaseHelper {
   List user_companies_list = [];
   List feedbacks_list = [];
   var token;
+
+  List<Tip> _tips = [];
+  List<TipCard> _tipCards = [];
 
 
   loginData(String email, String password) async {
@@ -701,7 +706,86 @@ print(value.toString());
       return json.decode(response.body);
     }
   }
-  //
+
+
+  Future getSpecTips(String catID , String countryID) async {
+    final prefs = await SharedPreferences.getInstance();
+    final key = 'token';
+    final value = prefs.get(key) ?? 0;
+
+    String myUrl = "$serverUrl/tips/get_tips_by_spec.php";
+    final response = await http.post(myUrl,
+        body: {
+          "token": value,
+          "country_id": countryID,
+          "category_id": catID,
+        });
+
+    print("result: ${response.body}");
+
+
+    _tips = [];
+    Tip tTip;
+
+    if (response.body.toString().contains("tips"))
+    {
+      if (response.body.toString().contains("null"))
+        {
+          return _tips;
+        }
+      else
+        {
+          var data = json.decode(response.body);
+
+          for (var ques in data['tips'])
+          {
+            tTip = Tip.fromJson(ques);
+            _tips.add(tTip);
+          }
+
+          return _tips;
+        }
+    }
+  }
+
+  Future getTipCards(String tipID) async {
+    final prefs = await SharedPreferences.getInstance();
+    final key = 'token';
+    final value = prefs.get(key) ?? 0;
+
+    String myUrl = "$serverUrl/tips/get_tip_card_list.php";
+    final response = await http.post(myUrl,
+        body: {
+          "token": value,
+          "tip_id": tipID,
+        });
+
+    print("result: ${response.body}");
+
+
+    _tipCards = [];
+    TipCard tTipCard;
+
+    if (response.body.toString().contains("tip_cards"))
+    {
+      if (response.body.toString().contains("null"))
+      {
+        return _tipCards;
+      }
+      else
+      {
+        var data = json.decode(response.body);
+
+        for (var ques in data['tip_cards'])
+        {
+          tTipCard = TipCard.fromJson(ques);
+          _tipCards.add(tTipCard);
+        }
+
+        return _tipCards;
+      }
+    }
+  }
 
 
 }

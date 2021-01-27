@@ -1855,6 +1855,7 @@ style CardView_Light
 style DetailViewTheme
 style FishBunTheme
 style LaunchTheme
+style NormalTheme
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents

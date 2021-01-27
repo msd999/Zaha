@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sh/Documents/work/zaha/App/Zaha/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml",
+            "outputFile": "E:\\Android_Studio_Projects\\Zaha\\Zaha\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-th\\values-th.xml",
             "map": [
                 {
-                    "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/ad072bd06501b4ced252e97ed9ee745e/jetified-play-services-basement-17.0.0/res/values-th/values.xml",
+                    "source": "C:\\Users\\Nawar\\.gradle\\caches\\transforms-3\\a0035a17d1cc92946bcaeba53b4e381d\\transformed\\jetified-play-services-basement-17.0.0\\res\\values-th\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/b2b51ad2129f7ae88186ad90508b79ab/core-1.1.0/res/values-th/values-th.xml",
+                    "source": "C:\\Users\\Nawar\\.gradle\\caches\\transforms-3\\0911c573b133bf2c162031d76125a12e\\transformed\\core-1.1.0\\res\\values-th\\values-th.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/8813ae3fadd6dff36ea9fa4c1e234318/jetified-facebook-login-5.5.1/res/values-th/values-th.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,206,335,488,605,691,777,856,945,1039,1156,1268,1362,1456,1564,1688,1767,1848,2037,2133,2239,2358,2468",
-                        "endColumns": "150,128,152,116,85,85,78,88,93,116,111,93,93,107,123,78,80,188,95,105,118,109,123",
-                        "endOffsets": "201,330,483,600,686,772,851,940,1034,1151,1263,1357,1451,1559,1683,1762,1843,2032,2128,2234,2353,2463,2587"
-                    },
-                    "to": {
-                        "startLines": "29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2764,2915,3044,3197,3314,3400,3486,3565,3654,3748,3865,3977,4071,4165,4273,4397,4476,4557,4746,4842,4948,5067,5177",
-                        "endColumns": "150,128,152,116,85,85,78,88,93,116,111,93,93,107,123,78,80,188,95,105,118,109,123",
-                        "endOffsets": "2910,3039,3192,3309,3395,3481,3560,3649,3743,3860,3972,4066,4160,4268,4392,4471,4552,4741,4837,4943,5062,5172,5296"
-                    }
-                },
-                {
-                    "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/3b22a803f89dbf772a4f91b1e3281e77/appcompat-1.0.0/res/values-th/values-th.xml",
+                    "source": "C:\\Users\\Nawar\\.gradle\\caches\\transforms-3\\d9b5d7cb69fe3774bb355c6428c9773f\\transformed\\appcompat-1.0.0\\res\\values-th\\values-th.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -72,7 +55,24 @@
                     }
                 },
                 {
-                    "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/78b13228d1b7806e4595749364e08dfc/jetified-play-services-base-17.1.0/res/values-th/values.xml",
+                    "source": "C:\\Users\\Nawar\\.gradle\\caches\\transforms-3\\cacfbbd2a896716ec80bf666ebd5db01\\transformed\\jetified-facebook-login-5.5.1\\res\\values-th\\values-th.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,206,335,488,605,691,777,856,945,1039,1156,1268,1362,1456,1564,1688,1767,1848,2037,2133,2239,2358,2468",
+                        "endColumns": "150,128,152,116,85,85,78,88,93,116,111,93,93,107,123,78,80,188,95,105,118,109,123",
+                        "endOffsets": "201,330,483,600,686,772,851,940,1034,1151,1263,1357,1451,1559,1683,1762,1843,2032,2128,2234,2353,2463,2587"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2764,2915,3044,3197,3314,3400,3486,3565,3654,3748,3865,3977,4071,4165,4273,4397,4476,4557,4746,4842,4948,5067,5177",
+                        "endColumns": "150,128,152,116,85,85,78,88,93,116,111,93,93,107,123,78,80,188,95,105,118,109,123",
+                        "endOffsets": "2910,3039,3192,3309,3395,3481,3560,3649,3743,3860,3972,4066,4160,4268,4392,4471,4552,4741,4837,4943,5062,5172,5296"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Nawar\\.gradle\\caches\\transforms-3\\ede0fb6565c1d4cb0488e7471e537435\\transformed\\jetified-play-services-base-17.1.0\\res\\values-th\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

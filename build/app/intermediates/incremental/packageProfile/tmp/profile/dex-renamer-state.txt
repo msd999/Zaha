@@ -1,4 +1,0 @@
-#Sun Nov 29 12:09:06 EET 2020
-base.0=/Users/sh/Documents/work/zaha/App/Zaha/build/app/intermediates/dex/profile/mergeDexProfile/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

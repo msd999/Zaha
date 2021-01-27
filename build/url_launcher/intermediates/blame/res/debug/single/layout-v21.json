@@ -1,18 +1,18 @@
 [
     {
-        "merged": "/Users/sh/Documents/work/zaha/App/Zaha/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
-        "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/b2b51ad2129f7ae88186ad90508b79ab/core-1.1.0/res/layout-v21/notification_template_custom_big.xml"
+        "merged": "E:\\Android_Studio_Projects\\Zaha\\Zaha\\build\\url_launcher\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Nawar\\.gradle\\caches\\transforms-3\\0911c573b133bf2c162031d76125a12e\\transformed\\core-1.1.0\\res\\layout-v21\\notification_action.xml"
     },
     {
-        "merged": "/Users/sh/Documents/work/zaha/App/Zaha/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
-        "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/b2b51ad2129f7ae88186ad90508b79ab/core-1.1.0/res/layout-v21/notification_template_icon_group.xml"
+        "merged": "E:\\Android_Studio_Projects\\Zaha\\Zaha\\build\\url_launcher\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Nawar\\.gradle\\caches\\transforms-3\\0911c573b133bf2c162031d76125a12e\\transformed\\core-1.1.0\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
-        "merged": "/Users/sh/Documents/work/zaha/App/Zaha/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_action.xml",
-        "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/b2b51ad2129f7ae88186ad90508b79ab/core-1.1.0/res/layout-v21/notification_action.xml"
+        "merged": "E:\\Android_Studio_Projects\\Zaha\\Zaha\\build\\url_launcher\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Nawar\\.gradle\\caches\\transforms-3\\0911c573b133bf2c162031d76125a12e\\transformed\\core-1.1.0\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
-        "merged": "/Users/sh/Documents/work/zaha/App/Zaha/build/url_launcher/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
-        "source": "/Users/sh/.gradle/caches/transforms-2/files-2.1/b2b51ad2129f7ae88186ad90508b79ab/core-1.1.0/res/layout-v21/notification_action_tombstone.xml"
+        "merged": "E:\\Android_Studio_Projects\\Zaha\\Zaha\\build\\url_launcher\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Nawar\\.gradle\\caches\\transforms-3\\0911c573b133bf2c162031d76125a12e\\transformed\\core-1.1.0\\res\\layout-v21\\notification_action_tombstone.xml"
     }
 ]
