@@ -5,6 +5,7 @@ import 'package:async/async.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:zaha_application/modules/Specialization.dart';
 import 'package:zaha_application/modules/Tip.dart';
 import 'package:zaha_application/modules/TipCard.dart';
 import 'package:zaha_application/view/login.dart';
@@ -24,6 +25,7 @@ class DatabaseHelper {
   var token;
 
   List<Tip> _tips = [];
+  List<Specialization> _specs = [];
   List<TipCard> _tipCards = [];
 
 
@@ -783,6 +785,43 @@ print(value.toString());
         }
 
         return _tipCards;
+      }
+    }
+  }
+
+  Future getSpecializations() async {
+    final prefs = await SharedPreferences.getInstance();
+    final key = 'token';
+    final value = prefs.get(key) ?? 0;
+
+    String myUrl = "$serverUrl/specializations/get_specs.php";
+    final response = await http.post(myUrl,
+        body: {
+          "token": value,
+        });
+
+    print("result: ${response.body}");
+
+    _specs = [];
+    Specialization tSpec;
+
+    if (response.body.toString().contains("categories"))
+    {
+      if (response.body.toString().contains("null"))
+      {
+        return _specs;
+      }
+      else
+      {
+        var data = json.decode(response.body);
+
+        for (var ques in data['categories'])
+        {
+          tSpec = Specialization.fromJson(ques);
+          _specs.add(tSpec);
+        }
+
+        return _specs;
       }
     }
   }
